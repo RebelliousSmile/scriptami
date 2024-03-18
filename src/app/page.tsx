@@ -140,7 +140,7 @@ function Newsletter() {
         <span className="ml-3">Suivre mon actualité</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        J'utilise les réseaux sociaux pour faire ma promotion professionnelle. Si vous voulez connaître mon actualité, laissez votre email pour cette lettre d'information ; promis, pas plus de 10 dans l'année. En laissant votre email, vous acceptez de recevoir des emails de ma part (voir conditions RPGD dans les mentions légales).
+        J&apos;utilise les réseaux sociaux pour faire ma promotion professionnelle. Si vous voulez connaître mon actualité, laissez votre email pour cette lettre d&apos;information ; promis, pas plus de 10 dans l&apos;année. En laissant votre email, vous acceptez de recevoir des emails de ma part (voir conditions RPGD dans les mentions légales).
       </p>
       <div className="mt-6 flex">
         <input
@@ -152,7 +152,7 @@ function Newsletter() {
           name="email"
         />
         <Button type="submit" className="ml-4 flex-none">
-          S'inscrire
+          S&apos;inscrire
         </Button>
       </div>
     </form>
@@ -297,7 +297,7 @@ export default async function Home() {
             François-Xavier Guillois - développeur senior, geek à temps plein.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            On m'appelle FX, je suis développeur PHP/JS basé à Rumilly en Haute-Savoie. J'officie sous la marque Scriptami. 
+            On m&apos;appelle FX, je suis développeur PHP/JS basé à Rumilly en Haute-Savoie. J&apos;officie sous la marque Scriptami. 
             Je crée des <Link href="/projets-realisations-scriptami">projets</Link> et <Link href="/devis-gratuit-pour-vos-envies-web">accompagne mes clients</Link> pour les autonomiser dans leurs défis numériques.
           </p>
           <div className="mt-6 flex gap-6">

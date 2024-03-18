@@ -73,23 +73,23 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Je m'appelle François-Xavier Guillois. Je vis à Rumilly, en Haute-Savoie (74).
+            Je m&apos;appelle François-Xavier Guillois. Je vis à Rumilly, en Haute-Savoie (74).
           </h1>
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mt-4">
             Je combine un excellent cadre de vie avec un abonnement à la fibre pour vivre dans le meilleur des mondes.
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            Je me suis lancé dans la programmation à l'âge de 10 ans, sur un MO5. J'écrivais en BASIC et sauvegardais mes programmes sur des cassettes de bandes magnétiques. Ma passion pour le monde imaginaire et les jeux de simulation s'est épanouie dès mon plus jeune âge, notamment à travers les livres dont vous êtes le héros.
+            Je me suis lancé dans la programmation à l&apos;âge de 10 ans, sur un MO5. J&apos;écrivais en BASIC et sauvegardais mes programmes sur des cassettes de bandes magnétiques. Ma passion pour le monde imaginaire et les jeux de simulation s&apos;est épanouie dès mon plus jeune âge, notamment à travers les livres dont vous êtes le héros.
             </p>
             <p>
-              Avant même d'avoir suivi un seul cours d'anglais, je me suis aventuré dans un voyage linguistique dans le sud de l'Angleterre. Cette expérience a non seulement élargi mes horizons mais m'a aussi ouvert à de nouvelles perspectives.
+              Avant même d&apos;avoir suivi un seul cours d&apos;anglais, je me suis aventuré dans un voyage linguistique dans le sud de l&apos;Angleterre. Cette expérience a non seulement élargi mes horizons mais m&apos;a aussi ouvert à de nouvelles perspectives.
             </p>
             <p>
-              Mon parcours professionnel a réellement pris son envol dans les agences web, où j'ai pu affiner mes compétences tout en répondant aux besoins variés des professionnels. Cette période m'a appris l'importance de comprendre le métier de mes clients tout en éliminant les intermédiaires, une philosophie que j'ai continué à appliquer dans ma carrière.
+              Mon parcours professionnel a réellement pris son envol dans les agences web, où j&apos;ai pu affiner mes compétences tout en répondant aux besoins variés des professionnels. Cette période m&apos;a appris l&apos;importance de comprendre le métier de mes clients tout en éliminant les intermédiaires, une philosophie que j&apos;ai continué à appliquer dans ma carrière.
             </p>
             <p>
-              Actuellement, en tant qu'indépendant, je concentre mes efforts sur des projets personnels diversifiés touchant à l'immobilier, aux jeux et à la santé, tout en continuant à collaborer avec d'anciens collègues et clients qui me font confiance.
+              Actuellement, en tant qu&apos;indépendant, je concentre mes efforts sur des projets personnels diversifiés touchant à l&apos;immobilier, aux jeux et à la santé, tout en continuant à collaborer avec d&apos;anciens collègues et clients qui me font confiance.
             </p>
           </div>
         </div>
