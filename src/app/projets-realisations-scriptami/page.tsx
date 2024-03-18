@@ -4,46 +4,30 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Cabinet Partagé',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      "Parce que notre santé nous concerne tous, de plus en plus de gens se reconvertissent dans les métiers de la santé et du bien-être. Et ont besoin de lieux agréables pour exercer, sans risquer de mettre à mal leur trésorerie.",
+    link: { href: 'http://www.cabinet-partage.fr', label: 'cabinet-partage.fr' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Botik',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'En concevant des agents autonomes pour les plates-formes majeures du e-commerce local (WooCommerce, Prestashop), je participe à créer la prochaine étape de la consommation sur internet, transparente et sécurisée.',
+    link: { href: 'https://botik.fr', label: 'botik.fr' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'EnRole(FR)',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      "D'abord conçue pour mon propre usage, EnRole est un annuaire d'actual plays (parties de jeu de rôles filmées) francophone, qui permet de gérer ses listes de visionnage et ses statistiques.",
+    link: { href: 'https://enrole.fr/', label: 'enrole.fr' },
     logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
   },
 ]
 
@@ -60,14 +44,14 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projets',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Utiliser le numérique pour transformer ma vie, et peut-être aussi la vôtre.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Utiliser le numérique pour transformer ma vie, et peut-être aussi la vôtre."
+      intro="Lorsque je développe, les idées fusent, les envies sont difficiles à contenir. Lorsque je crois que mon travail pourra être bénéfique à d'autres, j'en fais un projet."
     >
       <ul
         role="list"

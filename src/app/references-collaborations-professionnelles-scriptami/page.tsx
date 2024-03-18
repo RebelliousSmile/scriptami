@@ -43,53 +43,65 @@ function Appearance({
 export const metadata: Metadata = {
   title: 'Collaborations professionnelles',
   description:
-    'I’ve spoken at events all around the world and been interviewed for many podcasts.',
+    "Ce que j'apprécie dans mon métier, c'est de partager un bout de chemin avec des entrepreneurs, des gens qui ont un objectif. Mon but: les aider à l'atteindre.",
 }
 
 export default function Speaking() {
   return (
     <SimpleLayout
-      title="I’ve spoken at events all around the world and been interviewed for many podcasts."
-      intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
+      title="Mes collaborations professionnelles en 2024"
+      intro="Ce que j'apprécie dans mon métier, c'est de partager un bout de chemin avec des entrepreneurs, des gens qui ont un objectif. Mon but: les aider à l'atteindre. Il n'y a pas que des happy end, la conjoncture ou les divergences artistiques m'éloignent parfois des personnes avec qui j'ai travaillées, mais j'accorde plus d'attention au chemin qu'à la destination, si bien que je reste malgré tout admiratif des rencontres que j'ai faites, année après année, qui ont construit mon parcours."
     >
       <div className="space-y-20">
-        <SpeakingSection title="Conferences">
+        <SpeakingSection title="E-commerce">
           <Appearance
-            href="#"
-            title="In space, no one can watch you stream — until now"
-            description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-            event="SysConf 2021"
-            cta="Watch video"
+            href="https://bikly.fr/"
+            title="Collab avec Jennifer Cataldo"
+            description="L'objectif principal de Bikly est de s'assurer d'une automatisation de plus en plus importantes de toutes les tâches faites manuellement aujourd'hui. On oublie souvent combien une boutique en ligne peut être chronophage, et nous enfermer dans un emploi du temps sur lequel nous n'avons plus la main. J'interviens dans les mises à jour et les développements de cette boutique Prestashop 1.7/8."
+            event="Bikly"
+            cta="Sur la route du succès"
           />
           <Appearance
-            href="#"
-            title="Lessons learned from our first product recall"
-            description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-            event="Business of Startups 2020"
-            cta="Watch video"
+            href="https://epicime.com/"
+            title="Collab avec Léa Anthonioz"
+            description="Pour cette boutique en phase d'ascension, il est crucial d'éliminer les écueils amoncelés en chemin avant la prochaine montée en charge. Stabiliser le dialogue entre la boutique et l'ERP, s'assurer de la compatibilité du code pour les prochaines mises à jour, veiller à ne pas se fermer des portes avec des achats de module précipités. 
+            J'interviens dans les mises à jour et les développements de cette boutique Prestashop 1.7/8."
+            event="Epicime"
+            cta="Trouver le bon assaisonnement"
+          />
+          <Appearance
+            href="https://www.letempsdunebox.com/"
+            title="Collab avec Sandra Lebre-Akli"
+            description="J'ai créé cette boutique Woocommerce pour Sandra il y a 5 ans, et depuis nous faisons évoluer son site en fonction de ses projets et de ses nouvelles perspectives professionnelles."
+            event="Le temps d'une box"
+            cta="Rester zen en toutes circonstances"
           />
         </SpeakingSection>
-        <SpeakingSection title="Podcasts">
+        <SpeakingSection title="Wordpress">
+          <Appearance
+            href="https://www.808.fr/"
+            title="Collab avec Jean-Marie Lemaux"
+            description="808 possède énormément de sites Wordpress faits par de multiples. Nous travaillons aujourd'hui à ce que Jean-Marie puisse gérer son parc en tenant en compte le legacy."
+            event="808"
+            cta="Partager son savoir avec passion"
+          />         
+        </SpeakingSection>
+        <SpeakingSection title="WebApp">
           <Appearance
             href="#"
-            title="Using design as a competitive advantage"
-            description="How we used world-class visual design to attract a great team, win over customers, and get more press for Planetaria."
-            event="Encoding Design, July 2022"
-            cta="Listen to podcast"
-          />
+            title="Collab avec David Espic"
+            description="Après avoir participé à d'autres projets pour David, ce dernier m'a confié la réécriture de sa WebApp en VueJS pour se connecter à la nouvelle version de l'API de la société."
+            event="SmartLockers"
+            cta="Ouvrir les portes de la réussite"
+          />        
+        </SpeakingSection>
+        <SpeakingSection title="Site headless">
           <Appearance
-            href="#"
-            title="Bootstrapping an aerospace company to $17M ARR"
-            description="The story of how we built one of the most promising space startups in the world without taking any capital from investors."
-            event="The Escape Velocity Show, March 2022"
-            cta="Listen to podcast"
-          />
-          <Appearance
-            href="#"
-            title="Programming your company operating system"
-            description="On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
-            event="How They Work Radio, September 2021"
-            cta="Listen to podcast"
+            href="https://arbre-de-jade.com/"
+            title="Collab avec Sylvie Jacquier"
+            description="Après avoir réalisé un site complètement statique, nous avons décidé avec Sylvie de mettre en place un outil d'administration simple pour mettre à jour les stages. Avec Wordpress, la mise en place a été très simple."
+            event="L'arbre de Jade"
+            cta="Embrasser un développement holistique"
           />
         </SpeakingSection>
       </div>

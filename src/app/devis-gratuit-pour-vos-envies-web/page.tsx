@@ -42,79 +42,42 @@ export const metadata = {
 export default function Uses() {
   return (
     <SimpleLayout
-      title="Software I use, gadgets I love, and other things I recommend."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      title="J'accompagne mes clients afin de les autonomiser dans leurs défis numériques."
+      intro="Internet est un marché qui change constamment de configuration et d'agenda. Développeur dans ma première vie, je mets à profit mon expérience et ma vision d'internet pour aider celles et ceux qui ont besoin d'un bagage technique. Je leur sers de canne le temps qu'ils se remettent debout après avoir buté sur des gros cailloux. Contactez-moi et soyez le/la prochain.e."
     >
       <div className="space-y-20">
-        <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-            I was using an Intel-based 16” MacBook Pro prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
-            single time, even under the incredibly heavy loads I put it through
-            with our various launch simulations.
+        <ToolsSection title="Développement">
+          <Tool title="Créer et maintenir son site vitrine">
+            Les CMS et solutions no-code ont révolutionné votre capacité à créer leur propre vitrine numérique.
+            Parfois, vous êtes perdu.e parmi les possibles, submergé.e par la somme de connaissance à acquérir. 
+            Nous faisons le tri ensemble, nous fixons les prochains caps, et je vous donne les clés pour les atteindre.
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
-            The only display on the market if you want something HiDPI and
-            bigger than 27”. When you’re working at planetary scale, every pixel
-            you can get counts.
+          <Tool title="Gérer sa boutique en ligne">
+            Intervenant sur des boutiques en ligne depuis plus de 10 ans (oscommerce, Prestashop, Magento, Woocommerce), j'apporte mon expertise pour vous aider à gérer votre boutique en ligne.
+            Que ce soit pour des mises à jour, des développements spécifiques, ou pour vous aider à comprendre comment fonctionne votre boutique, nous travaillons sur tous les sujets pour vous faire gagner du temps et des clients.
           </Tool>
-          <Tool title="IBM Model M SSK Industrial Keyboard">
-            They don’t make keyboards the way they used to. I buy these any time
-            I see them go up for sale and keep them in storage in case I need
-            parts or need to retire my main.
-          </Tool>
-          <Tool title="Apple Magic Trackpad">
-            Something about all the gestures makes me feel like a wizard with
-            special powers. I really like feeling like a wizard with special
-            powers.
-          </Tool>
-          <Tool title="Herman Miller Aeron Chair">
-            If I’m going to slouch in the worst ergonomic position imaginable
-            all day, I might as well do it in an expensive chair.
+          <Tool title="Traduire vos besoins métier en numérique">
+            Gérer l'activité numérique de son entreprise, c'est arbitrer entre des solutions clé en main proposés par des gros éditeurs, et investir dans le développement de solutions personnalisées. 
+            Plus l'activité touche un besoin sensible à votre métier, plus vous devez l'internaliser et en avoir de contrôle. 
+            Je vous aide à comprendre les enjeux, à définir les besoins, et à développer les outils qui vous autonomiseront.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Development tools">
-          <Tool title="Sublime Text 4">
-            I don’t care if it’s missing all of the fancy IDE features everyone
-            else relies on, Sublime Text is still the best text editor ever
-            made.
+        <ToolsSection title="Formation">
+          <Tool title="Conduite accompagnée vers la mise en ligne">
+            Vous avez besoin de comprendre comment fonctionne votre site, comment le mettre à jour, comment le faire évoluer. 
+            Je vous accompagne dans la prise en main de votre outil, je crée la documentation qui vous manque pour vous y retrouver, et je vous fais faire des exercices pour m'assurer de votre montée en compétence.
           </Tool>
-          <Tool title="iTerm2">
-            I’m honestly not even sure what features I get with this that aren’t
-            just part of the macOS Terminal but it’s what I use.
-          </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. Has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
-          </Tool>
+          <Tool title="Automatisation">
+            Les intelligences artificielles génératives sont en train de révolutionner le monde du numérique. Parce que j'utilise ces technologies pour mes propres projets et que je fais de la veille sur le sujet, je peux vous accompagner dans la compréhension de ces technologies, et dans la mise en place de solutions pour votre entreprise.
+          </Tool>    
         </ToolsSection>
-        <ToolsSection title="Design">
-          <Tool title="Figma">
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
+        <ToolsSection title="Hors cadre">
+          <Tool title="Ecrivain public">
+            Que vous cherchez à créer du contenu optimisé pour le web (SEO), un relecteur compétent ou une plume pour rédiger vos newsletters et vos emails, je mets à votre disposition mon expérience de la rédaction pour écrire vite et bien. 
           </Tool>
-        </ToolsSection>
-        <ToolsSection title="Productivity">
-          <Tool title="Alfred">
-            It’s not the newest kid on the block but it’s still the fastest. The
-            Sublime Text of the application launcher world.
-          </Tool>
-          <Tool title="Reflect">
-            Using a daily notes system instead of trying to keep things
-            organized by topics has been super powerful for me. And with
-            Reflect, it’s still easy for me to keep all of that stuff
-            discoverable by topic even though all of my writing happens in the
-            daily note.
-          </Tool>
-          <Tool title="SavvyCal">
-            Great tool for scheduling meetings while protecting my calendar and
-            making sure I still have lots of time for deep work during the week.
-          </Tool>
-          <Tool title="Focus">
-            Simple tool for blocking distracting websites when I need to just do
-            the work and get some momentum going.
+          <Tool title="Gamification">
+            Dans la guerre de l'attention des utilisateurs, et des besoins de fidélisation, la gamification des outils numériques est une arme pour pousser les utilisateurs à revenir vous voir.
+            Définissons ensemble les scénarii compatibles avec vos possibilités techniques, et mettons en place des solutions pour vous démarquer.
           </Tool>
         </ToolsSection>
       </div>
