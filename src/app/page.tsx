@@ -19,11 +19,25 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/photos/select_1.png'
+import image2 from '@/images/photos/select_2.jpg'
+import image3 from '@/images/photos/select_3.jpg'
+import image4 from '@/images/photos/select_4.jpeg'
+import image5 from '@/images/photos/select_5.jpg'
+import image6 from '@/images/photos/select_6.jpg'
+import image7 from '@/images/photos/select_7.jpg'
+import image8 from '@/images/photos/select_8.jpg'
+import image9 from '@/images/photos/select_9.jpg'
+import image10 from '@/images/photos/select_10.jpg'
+
+// create an array of images
+const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10]
+
+// select 5 random images from the array
+const randomImages = images.sort(() => 0.5 - Math.random()).slice(0, 5);
+
+
+
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -96,7 +110,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>Continuer la lecture</Card.Cta>
     </Card>
   )
 }
@@ -117,8 +131,9 @@ function SocialLink({
 function Newsletter() {
   return (
     <form
-      action="/thank-you"
+      action="/api/newsletter"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+      method="POST"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
@@ -134,6 +149,7 @@ function Newsletter() {
           aria-label="Email address"
           required
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
+          name="email"
         />
         <Button type="submit" className="ml-4 flex-none">
           S'inscrire
@@ -235,7 +251,7 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="./documents/fxg-cvdevweb-latest.pdf" variant="secondary" className="group mt-6 w-full">
         Télécharger mon C.V.
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -249,7 +265,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {randomImages.map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(

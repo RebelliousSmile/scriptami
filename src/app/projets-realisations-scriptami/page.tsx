@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoBotik from '@/images/logos/botik.svg'
+import logoEnRole from '@/images/logos/enrole.svg'
+import logoCabPart from '@/images/logos/cabinetpartage.svg'
 
 const projects = [
   {
@@ -13,21 +13,21 @@ const projects = [
     description:
       "Parce que notre santé nous concerne tous, de plus en plus de gens se reconvertissent dans les métiers de la santé et du bien-être. Et ont besoin de lieux agréables pour exercer, sans risquer de mettre à mal leur trésorerie.",
     link: { href: 'http://www.cabinet-partage.fr', label: 'cabinet-partage.fr' },
-    logo: logoPlanetaria,
+    logo: logoCabPart,
   },
   {
     name: 'Botik',
     description:
       'En concevant des agents autonomes pour les plates-formes majeures du e-commerce local (WooCommerce, Prestashop), je participe à créer la prochaine étape de la consommation sur internet, transparente et sécurisée.',
     link: { href: 'https://botik.fr', label: 'botik.fr' },
-    logo: logoAnimaginary,
+    logo: logoBotik,
   },
   {
     name: 'EnRole(FR)',
     description:
       "D'abord conçue pour mon propre usage, EnRole est un annuaire d'actual plays (parties de jeu de rôles filmées) francophone, qui permet de gérer ses listes de visionnage et ses statistiques.",
     link: { href: 'https://enrole.fr/', label: 'enrole.fr' },
-    logo: logoHelioStream,
+    logo: logoEnRole,
   },
 ]
 
