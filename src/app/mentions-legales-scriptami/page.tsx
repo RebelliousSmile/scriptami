@@ -14,7 +14,7 @@ import {
   DiscordIcon,
   ItchioIcon
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/portrait_2.jpg'
 
 function SocialLink({
   className,
