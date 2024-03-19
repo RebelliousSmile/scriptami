@@ -37,7 +37,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.',
+    "Réflexions sur ma vie professionnelle et personnelle, en sélectionnant au tamis de ce qui est généralisable aux autres.",
 }
 
 export default async function ArticlesIndex() {
@@ -45,14 +45,16 @@ export default async function ArticlesIndex() {
 
   return (
     <SimpleLayout
-      title="Writing on software design, company building, and the aerospace industry."
-      intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+      title="Mes derniers articles, par ordre chronologique"
+      intro="Réflexions sur ma vie professionnelle et personnelle, en sélectionnant au tamis de ce qui est généralisable aux autres. J'ai eu de nombreux blogs. La plupart des mes articles ne résistaient pas à une relecture 6 mois après."
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div className="flex max-w-3xl flex-col space-y-16">
-          {articles.map((article) => (
-            <Article key={article.slug} article={article} />
-          ))}
+          {articles.length > 0 ? (
+            articles.map((article) => <Article key={article.slug} article={article} />)
+          ) : (
+            <p className="-ml-6 text-teal-500">les textes sont encore en phase de maturation.</p>
+          )}
         </div>
       </div>
     </SimpleLayout>
