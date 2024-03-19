@@ -80,28 +80,28 @@ export default function About() {
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <div className="pt-6 mt-6 border-t privacy-content border-gray-200/50">
-                <h2>Le texte</h2>
+                <h2 className="text-lg font-bold">Le texte</h2>
                 <div className="bold-text">
-                    L’obligation pour tout site internet de présenter des
+                    L&apos;obligation pour tout site internet de présenter des
                     mentions légales a été établie en 2004 par la loi de
-                    confiance dans l’économie numérique. Ces mentions
+                    confiance dans l&apos;économie numérique. Ces mentions
                     légales servent à vous informer sur les personnes
                     physiques et morales qui peuvent vous répondre en cas de
                     ligite ou de problème technique. Nous avons une
-                    obligation légale d’information à l’égard de
-                    l’internaute qui visite notre création.
+                    obligation légale d&apos;information à l&apos;égard de
+                    l&apos;internaute qui visite notre création.
                 </div>
             </div>
 
             <div className="mb-24 privacy-content">
-                <h3 className="mt-6 mb-1">
+                <h3 className="mt-6 mb-1 text-lg font-bold">
                     Protection des données personnelles
                 </h3>
-                <h5 className="mt-3 mb-1">Objet du traitement des données</h5>
+                <h5 className="mt-3 mb-1 font-bold">Objet du traitement des données</h5>
                 <p>
                     L'entreprise indididuelle FRANCOIS XAVIER GUILLOIS, dont
                     le siège est situé à RUMILLY (74150) 10 allée des
-                    Rossignols, dispose d’un site internet « vitrine », qui
+                    Rossignols, dispose d&apos;un site internet &lsquo; vitrine &rsquo;, qui
                     présente son activité de développeur en informatique. Ce
                     site permet, via un formulaire de contact en ligne, de
                     recevoir les demandes des internautes et les données
@@ -109,23 +109,23 @@ export default function About() {
                     base de données par un service tiers de confiance
                     (SendInBlue).
                 </p>
-                <p>Cette base de données permet :</p>
+                <p>Cette base de données permet :</p>
                 <ul>
                     <li>
                         de répondre aux sollicitations et demandes diverses
                         déposées sur le site internet,
                     </li>
                     <li>
-                        d’adresser des publicités par courrier postal ou
-                        électronique auprès des prospects qui ne s’y sont
+                        d&apos;adresser des publicités par courrier postal ou
+                        électronique auprès des prospects qui ne s&apos;y sont
                         pas opposés concernant les services proposés par
-                        l'entreprise.
+                        l&apos;entreprise.
                     </li>
                 </ul>
-                <h5 className="mt-3 mb-1">Base légale des traitements</h5>
+                <h5 className="mt-3 mb-1 font-bold">Base légale des traitements</h5>
                 <ul>
                     <li>
-                        <em>Délivrance de renseignements</em> : la base
+                        <em>Délivrance de renseignements</em> : la base
                         légale du traitement est le consentement de la
                         personne au traitement de ses données à caractère
                         personnel pour une plusieurs finalités spécifiques
@@ -134,7 +134,7 @@ export default function About() {
                     </li>
                     <li>
                         <em>Prise de rendez-vous</em> : la base légale du
-                        traitement est l'exécution de mesures
+                        traitement est l&apos;exécution de mesures
                         précontractuelles (Cf. article 6.1.b du Règlement
                         européen sur la protection des données).
                     </li>
@@ -142,9 +142,9 @@ export default function About() {
                         <em
                             >Envoi de sollicitations commerciales par
                             courrier postal ou électronique sur les produits
-                            et services commercialisés par l’entreprise</em
+                            et services commercialisés par l&apos;entreprise</em
                         >
-                        : la base légale du traitement est l’intérêt
+                        : la base légale du traitement est l&apos;intérêt
                         légitime de la société (Cf. article 6.1.f) du
                         Règlement européen sur la protection des données), à
                         savoir promouvoir nos produits et services et
@@ -152,33 +152,33 @@ export default function About() {
                     </li>
                 </ul>
 
-                <h5 className="mt-3 mb-1">Catégories de données</h5>
+                <h5 className="mt-3 mb-1 font-bold">Catégories de données</h5>
                 <ul>
                     <li>
                         <em>Identité</em> : civilité, nom, prénom, adresse
                         électronique, adresse, numéro de téléphone, code
-                        interne de traitement permettant l'identification du
-                        prospect, données relatives à l’enregistrement sur
-                        des listes d’opposition.
+                        interne de traitement permettant l&apos;identification du
+                        prospect, données relatives à l&apos;enregistrement sur
+                        des listes d&apos;opposition.
                     </li>
                     <li>
-                        <em>Données relatives aux devis</em> : numéro du
+                        <em>Données relatives aux devis</em> : numéro du
                         devis, détails et montant de la prestation demandée.
                     </li>
                 </ul>
-                <h5 className="mt-3 mb-1">Destinataires des données</h5>
-                Les services tiers utilisés par l’entreprise individuelle
+                <h5 className="mt-3 mb-1 font-bold">Destinataires des données</h5>
+                Les services tiers utilisés par l&apos;entreprise individuelle
                 FRANCOIS XAVIER GUILLOIS pour la mise en place des
                 fonctionnalités proposées sur ce site.
-                <h5 className="mt-3 mb-1">Durée de conservation des données</h5>
+                <h5 className="mt-3 mb-1 font-bold">Durée de conservation des données</h5>
                 <ul>
                     <li>
                         <em
                             >Données nécessaires à la délivrance de
                             renseignements ou de prise de rendez-vous</em
-                        > : un (1) an s’il n’est pas donné suite à
-                        l’information délivrée ou la proposition de
-                        rendez-vous de soins; si le rendez-vous de soins est
+                        > : un (1) an s&apos;il n&apos;est pas donné suite à
+                        l&apos;information délivrée ou la proposition de
+                        rendez-vous de soins; si le rendez-vous de soins est
                         effectif, les données sont reversées dans le fichier
                         clients de notre entreprise.
                     </li>
@@ -193,45 +193,46 @@ export default function About() {
                     </li>
                     <li>
                         <em
-                            >Données concernant les listes d'opposition à
+                            >Données concernant les listes d&apos;opposition à
                             recevoir de la prospection</em
-                        > : trois (3) ans.
+                        > : trois (3) ans.
                     </li>
                 </ul>
-                <h3 className="mt-6 mb-1">Vos droits</h3>
+                <h3 className="mt-6 mb-1 font-bold">Vos droits</h3>
                 <p>
                     Si vous ne souhaitez plus recevoir de publicité de la
-                    part de l’entreprise individuelle (exercice du droit
-                    d’opposition), contactez-nous à l’adresse indiquée
+                    part de l&apos;entreprise individuelle (exercice du droit
+                    d&apos;opposition), contactez-nous à l&apos;adresse indiquée
                     ci-dessus. Vous pouvez accéder aux données vous
                     concernant, les rectifier ou les faire effacer. Vous
-                    disposez également d'un droit à la portabilité et d’un
+                    disposez également d&apos;un droit à la portabilité et d&apos;un
                     droit à la limitation du traitement de vos données
                     (Consulter le site
                     <Link href="https://www.cnil.fr/"
                         >cnil.fr</Link
                     >
-                    pour plus d’informations sur vos droits).
+                    pour plus d&apos;informations sur vos droits).
                 </p>
                 <p>
                     Pour exercer ces droits ou pour toute question sur le
                     traitement de vos données dans ce dispositif, vous
-                    pouvez me contacter :
+                    pouvez me contacter :
                 </p>
-                <ul>
+                <ul className="my-3">
                     <li>
-                        <em>Par voie électronique</em> :
+                        <em>Par voie électronique</em> : 
                         <Link href="mailto:ecrire.a@scriptami.com">ecrire.a@scriptami.com</Link>
                     </li>
                     <li>
-                        <em>Par courrier postal</em> : SCRIPTAMI - M
-                        François-Xavier GUILLOIS 
+                        <em>Par courrier postal</em> :<br />SCRIPTAMI<br />François-Xavier GUILLOIS<br />
+                        10 allée des Rossignols<br />
+                        74150 RUMILLY
                     </li>
                 </ul>
                 <p>
-                    Si vous estimez, après avoir contacté l’entreprise
+                    Si vous estimez, après avoir contacté l&apos;entreprise
                     individuelle FRANCOIS XAVIER GUILLOIS, que vos droits
-                    « Informatique et Libertés » ne sont pas respectés, vous
+                    « Informatique et Libertés » ne sont pas respectés, vous
                     pouvez adresser une réclamation en ligne auprès de la
                     CNIL.
                 </p>
@@ -245,8 +246,7 @@ export default function About() {
                   données
               </p>
               <p>
-                  <strong>GUILLOIS François-Xavier</strong
-                  ><br />
+                  <strong>GUILLOIS François-Xavier</strong><br />
                   SIREN 891 085 516<br />
                   10 allée des Rossignols<br />
                   74150 RUMILLY<br />
@@ -263,7 +263,7 @@ export default function About() {
               </p>              
               <p>
                   Le nom de domaine nuxt.art est déposé chez
-                  l'hébergeur ALWAYSDATA SARL dont le siège
+                  l&apos;hébergeur ALWAYSDATA SARL dont le siège
                   social se trouve 91 rue du Faubourg Saint
                   Honoré - 75008 Paris.
               </p>
