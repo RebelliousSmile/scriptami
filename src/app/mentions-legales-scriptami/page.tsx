@@ -99,7 +99,7 @@ export default function About() {
                 </h3>
                 <h5 className="mt-3 mb-1 font-bold">Objet du traitement des données</h5>
                 <p>
-                    L'entreprise indididuelle FRANCOIS XAVIER GUILLOIS, dont
+                    L&apos;entreprise indididuelle FRANCOIS XAVIER GUILLOIS, dont
                     le siège est situé à RUMILLY (74150) 10 allée des
                     Rossignols, dispose d&apos;un site internet &lsquo; vitrine &rsquo;, qui
                     présente son activité de développeur en informatique. Ce
