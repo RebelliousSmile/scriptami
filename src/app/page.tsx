@@ -11,9 +11,10 @@ import {
   LinkedInIcon,
   XIcon,
   FacebookIcon,
-  PinterestIcon,
+  ObsidianIcon,
   DiscordIcon,
-  ItchioIcon
+  MastodonIcon,
+  PeertubeIcon
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
@@ -309,7 +310,7 @@ export default async function Home() {
             />
             <SocialLink
               href="https://github.com/tnntwister"
-              target='_blank'
+              target= '_blank'
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
@@ -326,10 +327,16 @@ export default async function Home() {
               icon={FacebookIcon}
             />
             <SocialLink
-              href="https://www.pinterest.fr/scriptami/"
+              href="https://publish.obsidian.md/jdr-fx/"
               target='_blank'
-              aria-label="Follow on Pinterest"
-              icon={PinterestIcon}
+              aria-label="My Obsidian space"
+              icon={ObsidianIcon}
+            />
+                 <SocialLink
+              href="https://videos.pair2jeux.tube/a/tnntwister/"
+              target='_blank'
+              aria-label="My animated Stories"
+              icon={PeertubeIcon}
             />
             <SocialLink
               href="https://discord.gg/JXeecvqGUx"
@@ -337,13 +344,8 @@ export default async function Home() {
               aria-label="Talk with me on Discord"
               icon={DiscordIcon}
             />  
-            <SocialLink
-              href="https://tnn-fx.itch.io/"
-              target='_blank'
-              aria-label="Follow on Itch.io"
-              icon={ItchioIcon}
-            />
             <SocialLink href="https://twitter.com/tnntwister"  target='_blank' aria-label="Follow on X" icon={XIcon} />
+            <SocialLink href="https://h4.io/@scriptami"  target='_blank' aria-label="Follow on Mastodon" icon={MastodonIcon} />
           </div>
         </div>
       </Container>

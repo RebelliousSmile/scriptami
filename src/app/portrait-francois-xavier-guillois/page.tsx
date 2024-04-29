@@ -10,9 +10,10 @@ import {
   LinkedInIcon,
   XIcon,
   FacebookIcon,
-  PinterestIcon,
+  ObsidianIcon,
   DiscordIcon,
-  ItchioIcon
+  MastodonIcon,
+  PeertubeIcon
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -99,10 +100,12 @@ export default function About() {
             <SocialLink href="https://github.com/tnntwister" icon={GitHubIcon}  className="mt-4">Mon compte GitHub</SocialLink>
             <SocialLink href="https://www.linkedin.com/in/francois-xavier-guillois/" icon={LinkedInIcon}  className="mt-4">Mon compte LinkedIn</SocialLink>
             <SocialLink href="https://www.facebook.com/scriptami/"  icon={FacebookIcon}  className="mt-4">Scriptami sur Facebook</SocialLink>
-            <SocialLink href="https://www.pinterest.fr/scriptami/" icon={PinterestIcon}  className="mt-4">Mon compte Pinterest</SocialLink>
+            <SocialLink href="https://publish.obsidian.md/jdr-fx/" icon={ObsidianIcon}  className="mt-4">Mon wiki JDR</SocialLink>
+            <SocialLink href="https://videos.pair2jeux.tube/a/tnntwister/" icon={PeertubeIcon}  className="mt-4">Mes histoires animées</SocialLink>
             <SocialLink href="https://discord.gg/JXeecvqGUx"  icon={DiscordIcon}  className="mt-4">Rejoins mon serveur Discord</SocialLink>  
-            <SocialLink href="https://tnn-fx.itch.io/" icon={ItchioIcon}  className="mt-4">Mon compte Itch.io</SocialLink>
             <SocialLink href="https://twitter.com/tnntwister" icon={XIcon}  className="mt-4">Mon compte X</SocialLink>
+            <SocialLink href="https://h4.io/@scriptami" icon={MastodonIcon}  className="mt-4">Mon compte Mastodon</SocialLink>
+            
             <SocialLink
               href="mailto:ecrire.a@scriptami.com"
               icon={MailIcon}

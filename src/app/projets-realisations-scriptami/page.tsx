@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoBotik from '@/images/logos/botik.svg'
-import logoEnRole from '@/images/logos/enrole.svg'
+import logoGiveaways from '@/images/logos/giveaways.svg'
 import logoCabPart from '@/images/logos/cabinetpartage.svg'
 
 const projects = [
@@ -18,16 +18,16 @@ const projects = [
   {
     name: 'Botik',
     description:
-      'En concevant des agents autonomes pour les plates-formes majeures du e-commerce local (WooCommerce, Prestashop), je participe à créer la prochaine étape de la consommation sur internet, transparente et sécurisée.',
+      'En concevant des agents autonomes pour parler boutique et produit avec des IA génératives, je participe à créer la prochaine étape de la consommation sur internet, plus naturelle, plus fluide, plus transparente.',
     link: { href: 'https://botik.fr', label: 'botik.fr' },
     logo: logoBotik,
   },
   {
-    name: 'EnRole(FR)',
+    name: 'Giveaways',
     description:
-      "D'abord conçue pour mon propre usage, EnRole est un annuaire d'actual plays (parties de jeu de rôles filmées) francophone, qui permet de gérer ses listes de visionnage et ses statistiques.",
-    link: { href: 'https://enrole.fr/', label: 'enrole.fr' },
-    logo: logoEnRole,
+      "D'abord conçu pour une communauté dans laquelle je participe, je propose ce bot discord à toutes les personnes qui en ont besoin.",
+    link: { href: 'https://github.com/tnntwister/dc-giveaways', label: 'giveaways' },
+    logo: logoGiveaways,
   },
 ]
 

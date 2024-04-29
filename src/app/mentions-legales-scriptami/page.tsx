@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   XIcon,
   FacebookIcon,
-  PinterestIcon,
+  ObsidianIcon,
   DiscordIcon,
   ItchioIcon
 } from '@/components/SocialIcons'
