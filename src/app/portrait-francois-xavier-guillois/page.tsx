@@ -77,22 +77,22 @@ export default function About() {
             Je fais partie des travailleurs nomades dont le bureau donne sur la nature.
           </h1>
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mt-4">
-            Mais j'ai la fibre. Je suis réactif pour mes clients, je travaille avec des IA. Le meilleur des mondes, c'est celui qu'on se crée.
+          Mais j&#039;ai la fibre. Je suis r&eacute;actif pour mes clients, je travaille avec des IA. Le meilleur des mondes, c&#039;est celui qu&#039;on se cr&eacute;e.
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            Côté professionnel, j'ai fait partie des early adopters d'internet, et depuis je ne cesse de m'émerveiller de ses projets. En parent responsable, je condamne aussi ses excès, ses dérives. Avec l'arrivée de l'IA, définir son éthique, penser au coût carbone de ses développements, 
-            est devenu aussi important que de s'assurer de la qualité de ses algorithmes.
+            C&ocirc;t&eacute; professionnel, j&#039;ai fait partie des early adopters d&#039;internet, et depuis je ne cesse de m&#039;&eacute;merveiller de ses projets. En parent responsable, je condamne aussi ses exc&egrave;s, ses d&eacute;rives. Avec l&#039;arriv&eacute;e de l&#039;IA, d&eacute;finir son &eacute;thique, penser au co&ucirc;t carbone de ses d&eacute;veloppements, 
+            est devenu aussi important que de s&#039;assurer de la qualit&eacute; de ses algorithmes.
             </p>
             <p>
-              Côté personnel, j'aime me servir de ma tête, qu'il s'agisse de lecture, d'un jeu de plateau ou de parties de jeu de rôles. J'aime aussi me servir de mes muscles, dans le jardin, en randonnée, en vélo. 
-              Enfin, j'aime aussi le développement personnel, j'ai un diplôme de psychologie et je fais des stages de méditation, de yoga et de Qi Gong. 
+            C&ocirc;t&eacute; personnel, j&#039;aime me servir de ma t&ecirc;te, qu&#039;il s&#039;agisse de lecture, d&#039;un jeu de plateau ou de parties de jeu de r&ocirc;les. J&#039;aime aussi me servir de mes muscles, dans le jardin, en randonn&eacute;e, en v&eacute;lo. 
+              Enfin, j&#039;aime aussi le d&eacute;veloppement personnel, j&#039;ai un dipl&ocirc;me de psychologie et je fais des stages de m&eacute;ditation, de yoga et de Qi Gong. 
             </p>
             <p>
-              Entre les deux, j'aime développer des lieux de vie, que ce soit ma maison construite avec des architectes, ou les cabinets de soins où le partage est au coeur du projet.
+            Entre les deux, j&#039;aime d&eacute;velopper des lieux de vie, que ce soit ma maison construite avec des architectes, ou les cabinets de soins o&ugrave; le partage est au coeur du projet.
             </p>
             <p>
-              Un coach m'a dit : "Le meilleur investissement que tu puisses faire c'est sur toi-même." C'est le meilleure conseil que j'ai reçu, et m'empresse de vous le transmettre à mon tour. N'ayez jamais de cesse de vous développer, de vous embellir, de vous dépasser. 
+            Un coach m&#039;a dit : &quot;Le meilleur investissement que tu puisses faire c&#039;est sur toi-m&ecirc;me.&quot; C&#039;est le meilleure conseil que j&#039;ai re&ccedil;u, et m&#039;empresse de vous le transmettre &agrave; mon tour. N&#039;ayez jamais de cesse de vous d&eacute;velopper, de vous embellir, de vous d&eacute;passer. 
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function About() {
               ecrire.a@scriptami.com
             </SocialLink>
           </ul>
-          <p class="mt-12 space-y-7 text-sm text-zinc-600 dark:text-zinc-400 leading-9">
+          <p className="mt-12 space-y-7 text-sm text-zinc-600 dark:text-zinc-400 leading-9">
             François-Xavier Guillois<br />
             Rumilly, Haute-Savoie (74)<br />
             tél : <a href="tel:0638056100">0638 056 100</a>
