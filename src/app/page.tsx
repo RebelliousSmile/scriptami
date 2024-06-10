@@ -295,11 +295,12 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            François-Xavier Guillois - développeur senior, geek à temps plein.
+            Développer. Se développer.<br /> Sur tous les plans.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            On m&apos;appelle FX, je suis développeur PHP/JS basé à Rumilly en Haute-Savoie. J&apos;officie sous la marque Scriptami. 
+            Officiant sous la marque Scriptami, je suis un développeur web indépendant basé à Rumilly, en Haute-Savoie (74). 
             Je crée des <Link href="/projets-realisations-scriptami">projets</Link> et <Link href="/devis-gratuit-pour-vos-envies-web">accompagne mes clients</Link> pour les autonomiser dans leurs défis numériques.
+            Allez sur <Link href="/projets-realisations-scriptami">ma bio</Link> pour les détails et les liens personnels.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -328,6 +329,7 @@ export default async function Home() {
               icon={DiscordIcon}
             />  
           </div>
+          
         </div>
       </Container>
       <Photos />

@@ -74,23 +74,25 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Je m&apos;appelle François-Xavier Guillois. Je vis à Rumilly, en Haute-Savoie (74).
+            Je fais partie des travailleurs nomades dont le bureau donne sur la nature.
           </h1>
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mt-4">
-            Je combine un excellent cadre de vie avec un abonnement à la fibre pour vivre dans le meilleur des mondes.
+            Mais j'ai la fibre. Je suis réactif pour mes clients, je travaille avec des IA. Le meilleur des mondes, c'est celui qu'on se crée.
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            Je me suis lancé dans la programmation à l&apos;âge de 10 ans, sur un MO5. J&apos;écrivais en BASIC et sauvegardais mes programmes sur des cassettes de bandes magnétiques. Ma passion pour le monde imaginaire et les jeux de simulation s&apos;est épanouie dès mon plus jeune âge, notamment à travers les livres dont vous êtes le héros.
+            Côté professionnel, j'ai fait partie des early adopters d'internet, et depuis je ne cesse de m'émerveiller de ses projets. En parent responsable, je condamne aussi ses excès, ses dérives. Avec l'arrivée de l'IA, définir son éthique, penser au coût carbone de ses développements, 
+            est devenu aussi important que de s'assurer de la qualité de ses algorithmes.
             </p>
             <p>
-              Avant même d&apos;avoir suivi un seul cours d&apos;anglais, je me suis aventuré dans un voyage linguistique dans le sud de l&apos;Angleterre. Cette expérience a non seulement élargi mes horizons mais m&apos;a aussi ouvert à de nouvelles perspectives.
+              Côté personnel, j'aime me servir de ma tête, qu'il s'agisse de lecture, d'un jeu de plateau ou de parties de jeu de rôles. J'aime aussi me servir de mes muscles, dans le jardin, en randonnée, en vélo. 
+              Enfin, j'aime aussi le développement personnel, j'ai un diplôme de psychologie et je fais des stages de méditation, de yoga et de Qi Gong. 
             </p>
             <p>
-              Mon parcours professionnel a réellement pris son envol dans les agences web, où j&apos;ai pu affiner mes compétences tout en répondant aux besoins variés des professionnels. Cette période m&apos;a appris l&apos;importance de comprendre le métier de mes clients tout en éliminant les intermédiaires, une philosophie que j&apos;ai continué à appliquer dans ma carrière.
+              Entre les deux, j'aime développer des lieux de vie, que ce soit ma maison construite avec des architectes, ou les cabinets de soins où le partage est au coeur du projet.
             </p>
             <p>
-              Actuellement, en tant qu&apos;indépendant, je concentre mes efforts sur des projets personnels diversifiés touchant à l&apos;immobilier, aux jeux et à la santé, tout en continuant à collaborer avec d&apos;anciens collègues et clients qui me font confiance.
+              Un coach m'a dit : "Le meilleur investissement que tu puisses faire c'est sur toi-même." C'est le meilleure conseil que j'ai reçu, et m'empresse de vous le transmettre à mon tour. N'ayez jamais de cesse de vous développer, de vous embellir, de vous dépasser. 
             </p>
           </div>
         </div>
@@ -110,6 +112,11 @@ export default function About() {
               ecrire.a@scriptami.com
             </SocialLink>
           </ul>
+          <p class="mt-12 space-y-7 text-sm text-zinc-600 dark:text-zinc-400 leading-9">
+            François-Xavier Guillois<br />
+            Rumilly, Haute-Savoie (74)<br />
+            tél : <a href="tel:0638056100">0638 056 100</a>
+          </p>
         </div>
       </div>
     </Container>
