@@ -96,15 +96,11 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="https://www.instagram.com/scriptami/"  icon={InstagramIcon}>Scriptami sur Instagram</SocialLink>
             <SocialLink href="https://github.com/tnntwister" icon={GitHubIcon}  className="mt-4">Mon compte GitHub</SocialLink>
             <SocialLink href="https://www.linkedin.com/in/francois-xavier-guillois/" icon={LinkedInIcon}  className="mt-4">Mon compte LinkedIn</SocialLink>
-            <SocialLink href="https://www.facebook.com/scriptami/"  icon={FacebookIcon}  className="mt-4">Scriptami sur Facebook</SocialLink>
-            <SocialLink href="https://publish.obsidian.md/jdr-fx/" icon={ObsidianIcon}  className="mt-4">Mon wiki JDR</SocialLink>
+            <SocialLink href="https://h4.io/@empathie" icon={MastodonIcon}  className="mt-4">Mon compte Mastodon</SocialLink>
             <SocialLink href="https://videos.pair2jeux.tube/a/tnntwister/" icon={PeertubeIcon}  className="mt-4">Mes histoires animées</SocialLink>
             <SocialLink href="https://discord.gg/JXeecvqGUx"  icon={DiscordIcon}  className="mt-4">Rejoins mon serveur Discord</SocialLink>  
-            <SocialLink href="https://twitter.com/tnntwister" icon={XIcon}  className="mt-4">Mon compte X</SocialLink>
-            <SocialLink href="https://h4.io/@scriptami" icon={MastodonIcon}  className="mt-4">Mon compte Mastodon</SocialLink>
             
             <SocialLink
               href="mailto:ecrire.a@scriptami.com"

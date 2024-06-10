@@ -303,17 +303,12 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://www.instagram.com/scriptami/"
-              target='_blank'
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
               href="https://github.com/tnntwister"
               target= '_blank'
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
+            <SocialLink href="https://h4.io/@empathie"  target='_blank' aria-label="Follow on Mastodon" icon={MastodonIcon} />
             <SocialLink
               href="https://www.linkedin.com/in/francois-xavier-guillois/"
               target='_blank'
@@ -321,18 +316,6 @@ export default async function Home() {
               icon={LinkedInIcon}
             />
             <SocialLink
-              href="https://www.facebook.com/scriptami/"
-              target='_blank'
-              aria-label="Follow on Facebook"
-              icon={FacebookIcon}
-            />
-            <SocialLink
-              href="https://publish.obsidian.md/jdr-fx/"
-              target='_blank'
-              aria-label="My Obsidian space"
-              icon={ObsidianIcon}
-            />
-                 <SocialLink
               href="https://videos.pair2jeux.tube/a/tnntwister/"
               target='_blank'
               aria-label="My animated Stories"
@@ -344,8 +327,6 @@ export default async function Home() {
               aria-label="Talk with me on Discord"
               icon={DiscordIcon}
             />  
-            <SocialLink href="https://twitter.com/tnntwister"  target='_blank' aria-label="Follow on X" icon={XIcon} />
-            <SocialLink href="https://h4.io/@scriptami"  target='_blank' aria-label="Follow on Mastodon" icon={MastodonIcon} />
           </div>
         </div>
       </Container>
