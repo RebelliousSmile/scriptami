@@ -7,12 +7,9 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  XIcon,
-  FacebookIcon,
-  ObsidianIcon,
   DiscordIcon,
+  SignalIcon,
   MastodonIcon,
   PeertubeIcon
 } from '@/components/SocialIcons'
@@ -306,28 +303,29 @@ export default async function Home() {
             <SocialLink
               href="https://github.com/tnntwister"
               target= '_blank'
-              aria-label="Follow on GitHub"
+              aria-label="Mes projets GitHub"
               icon={GitHubIcon}
             />
-            <SocialLink href="https://h4.io/@empathie"  target='_blank' aria-label="Follow on Mastodon" icon={MastodonIcon} />
             <SocialLink
               href="https://www.linkedin.com/in/francois-xavier-guillois/"
               target='_blank'
-              aria-label="Follow on LinkedIn"
+              aria-label="Compte pro (LinkedIn)"
               icon={LinkedInIcon}
             />
-            <SocialLink
-              href="https://videos.pair2jeux.tube/a/tnntwister/"
-              target='_blank'
-              aria-label="My animated Stories"
-              icon={PeertubeIcon}
-            />
+            <SocialLink href="https://h4.io/@empathie"  target='_blank' aria-label="Compte perso (Mastodon)" icon={MastodonIcon} />
+            <SocialLink href="https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM"  target='_blank' aria-label="Messagerie instantanée (Signal)" icon={SignalIcon} />
             <SocialLink
               href="https://discord.gg/JXeecvqGUx"
               target='_blank'
               aria-label="Talk with me on Discord"
               icon={DiscordIcon}
             />  
+                        <SocialLink
+              href="https://videos.pair2jeux.tube/a/tnntwister/"
+              target='_blank'
+              aria-label="My animated Stories"
+              icon={PeertubeIcon}
+            />
           </div>
           
         </div>

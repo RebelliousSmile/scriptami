@@ -6,11 +6,8 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  XIcon,
-  FacebookIcon,
-  ObsidianIcon,
+  SignalIcon,
   DiscordIcon,
   MastodonIcon,
   PeertubeIcon
@@ -98,11 +95,12 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="https://github.com/tnntwister" icon={GitHubIcon}  className="mt-4">Mon compte GitHub</SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/francois-xavier-guillois/" icon={LinkedInIcon}  className="mt-4">Mon compte LinkedIn</SocialLink>
-            <SocialLink href="https://h4.io/@empathie" icon={MastodonIcon}  className="mt-4">Mon compte Mastodon</SocialLink>
-            <SocialLink href="https://videos.pair2jeux.tube/a/tnntwister/" icon={PeertubeIcon}  className="mt-4">Mes histoires animées</SocialLink>
+            <SocialLink href="https://github.com/tnntwister" icon={GitHubIcon}  className="mt-4">Mon code public (GitHub)</SocialLink>
+            <SocialLink href="https://www.linkedin.com/in/francois-xavier-guillois/" icon={LinkedInIcon}  className="mt-4">Mon compte pro (LinkedIn)</SocialLink>
+            <SocialLink href="https://h4.io/@empathie" icon={MastodonIcon}  className="mt-4">Mon compte perso (Mastodon)</SocialLink>
+            <SocialLink href="https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM" icon={SignalIcon}  className="mt-4">Ma messagerie (Signal)</SocialLink>
             <SocialLink href="https://discord.gg/JXeecvqGUx"  icon={DiscordIcon}  className="mt-4">Rejoins mon serveur Discord</SocialLink>  
+            <SocialLink href="https://videos.pair2jeux.tube/a/tnntwister/" icon={PeertubeIcon}  className="mt-4">Mes histoires animées</SocialLink>
             
             <SocialLink
               href="mailto:ecrire.a@scriptami.com"
