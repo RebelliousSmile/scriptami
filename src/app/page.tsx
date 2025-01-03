@@ -3,7 +3,6 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -11,13 +10,11 @@ import {
   DiscordIcon,
   SignalIcon,
   BlueSkyIcon,
-  MatrixIcon,
-  PeertubeIcon
+  MatrixIcon
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoWordpress from '@/images/logos/animaginary.svg'
+import logoNextjs from '@/images/logos/airbnb.svg'
+import logoReact from '@/images/logos/planetaria.svg'
 import image1 from '@/images/photos/select_1.png'
 import image2 from '@/images/photos/select_2.jpg'
 import image3 from '@/images/photos/select_3.jpg'
@@ -35,9 +32,6 @@ const images = [image1, image2, image3, image4, image5, image6, image7, image8, 
 // select 5 random images from the array
 const randomImages = images.sort(() => 0.5 - Math.random()).slice(0, 5);
 
-
-
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -96,21 +90,6 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
-
-function Article({ article }: { article: ArticleWithSlug }) {
-  return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Continuer la lecture</Card.Cta>
-    </Card>
   )
 }
 
@@ -204,39 +183,34 @@ function Role({ role }: { role: Role }) {
 }
 
 function Resume() {
-  let resume: Array<Role> = [
+  let resume = [
     {
       company: 'Wordpress',
       title: 'Développement, maintenance',
-      logo: logoPlanetaria,
+      logo: logoWordpress,
       start: {
         label: 'Toutes',
         dateTime: "6.4.3"
       },
-      end: "6.4.3",
+      end: {
+        label: 'versions',
+        dateTime: "6.4.3",
+      },
     },
     {
-      company: 'Prestashop',
+      company: 'Next.js',
       title: 'Développement, Mise à jour',
-      logo: logoAirbnb,
+      logo: logoNextjs,
       start: '1.5',
       end: '8',
-      
     },
     {
-      company: 'PHP',
-      title: 'Laravel, Inertia, Jetstream',
-      logo: logoFacebook,
-      start: '9',
-      end: "11",
-    },
-    {
-      company: 'Javascript',
-      title: 'Vue, Nuxt',
-      logo: logoStarbucks,
-      start: 'v2',
-      end: "v3",
-    },
+      company: 'React',
+      title: 'Développement, Mise à jour',
+      logo: logoReact,
+      start: '16',
+      end: '18',
+    }
   ]
 
   return (
@@ -286,8 +260,6 @@ function Photos() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
-
   return (
     <>
       <Container className="mt-9">
@@ -297,8 +269,8 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Officiant sous la marque Scriptami, je suis un développeur web indépendant basé à Rumilly, en Haute-Savoie (74). 
-            Je crée des <Link href="/projets-realisations-scriptami">projets</Link> et <Link href="/devis-gratuit-pour-vos-envies-web">accompagne mes clients</Link> pour les autonomiser dans leurs défis numériques.
-            Allez sur <Link href="/projets-realisations-scriptami">ma bio</Link> pour les détails et les liens personnels.
+            Je crée des <Link href="/references-collaborations-professionnelles-scriptami">projets</Link> et <Link href="/devis-gratuit-pour-vos-envies-web">accompagne mes clients</Link> pour les autonomiser dans leurs défis numériques.
+            Allez sur <Link href="/portrait-francois-xavier-guillois">ma bio</Link> pour les détails et les liens personnels.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -323,11 +295,6 @@ export default async function Home() {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
-          </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
             <Resume />

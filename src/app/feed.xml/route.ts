@@ -1,5 +1,3 @@
-import assert from 'assert'
-import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
 export async function GET(req: Request) {
@@ -15,8 +13,8 @@ export async function GET(req: Request) {
   }
 
   let feed = new Feed({
-    title: author.name,
-    description: 'Blog de François-Xavier Guillois / Scriptami',
+    title: 'Scriptami - François-Xavier Guillois',
+    description: 'Développeur senior spécialisé en automatisation IA, contrôle d\'accès et e-commerce',
     author,
     id: siteUrl,
     link: siteUrl,
@@ -28,35 +26,30 @@ export async function GET(req: Request) {
     },
   })
 
-  let articleIds = require
-    .context('../blog-developpement-geek', true, /\/page\.mdx$/)
-    .keys()
-    .filter((key) => key.startsWith('./'))
-    .map((key) => key.slice(2).replace(/\/page\.mdx$/, ''))
+  // Ajouter les pages principales au feed
+  const mainPages = [
+    {
+      url: '/automatisation-controle-acces-e-commerce',
+      title: 'Nos Forces - Automatisation, Contrôle d\'accès, E-commerce',
+    },
+    {
+      url: '/activites-auto-entrepreneur-developpement-haute-savoie',
+      title: 'Activités - Développement et Formation',
+    },
+    {
+      url: '/references-collaborations-professionnelles-scriptami',
+      title: 'Références et Collaborations',
+    },
+  ]
 
-  for (let id of articleIds) {
-    let url = String(new URL(`/articles/${id}`, req.url))
-    let html = await (await fetch(url)).text()
-    let $ = cheerio.load(html)
-
-    let publicUrl = `${siteUrl}/articles/${id}`
-    let article = $('article').first()
-    let title = article.find('h1').first().text()
-    let date = article.find('time').first().attr('datetime')
-    let content = article.find('[data-mdx-content]').first().html()
-
-    assert(typeof title === 'string')
-    assert(typeof date === 'string')
-    assert(typeof content === 'string')
-
+  for (let page of mainPages) {
     feed.addItem({
-      title,
-      id: publicUrl,
-      link: publicUrl,
-      content,
+      title: page.title,
+      id: `${siteUrl}${page.url}`,
+      link: `${siteUrl}${page.url}`,
+      content: `Consultez ${page.title} sur Scriptami`,
       author: [author],
-      contributor: [author],
-      date: new Date(date),
+      date: new Date(),
     })
   }
 

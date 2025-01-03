@@ -27,11 +27,12 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                <NavLink href="/">Accueil</NavLink>
                 <NavLink href="/portrait-francois-xavier-guillois">Portrait</NavLink>
-                <NavLink href="/blog-developpement-geek">Blog</NavLink>
-                <NavLink href="/projets-realisations-scriptami">Projets</NavLink>
-                <NavLink href="/references-collaborations-professionnelles-scriptami">Collaborations</NavLink>
-                <NavLink href="/devis-gratuit-pour-vos-envies-web">Accompagnement</NavLink>
+                <NavLink href="/activites-auto-entrepreneur-developpement-haute-savoie">Activités</NavLink>
+                <NavLink href="/automatisation-controle-acces-e-commerce">Nos Forces</NavLink>
+                <NavLink href="/references-collaborations-professionnelles-scriptami">Références</NavLink>
+                <NavLink href="/devis-gratuit-pour-vos-envies-web">Devis</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; 2024 François-Xavier Guillois, tous droits réservés - <NavLink href="/mentions-legales-scriptami">Mentions légales</NavLink>

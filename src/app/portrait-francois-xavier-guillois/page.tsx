@@ -10,8 +10,7 @@ import {
   SignalIcon,
   DiscordIcon,
   BlueSkyIcon,
-  MatrixIcon,
-  PeertubeIcon
+  MatrixIcon
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -96,11 +95,11 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="https://github.com/tnntwister" icon={GitHubIcon}  className="mt-4">Mon code public (GitHub)</SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/francois-xavier-guillois/" icon={LinkedInIcon}  className="mt-4">Mon compte pro (LinkedIn)</SocialLink>
-            <SocialLink href="https://bsky.app/profile/fxguillois.bsky.social" icon={BlueSkyIcon}  className="mt-4">Mon compte Bluesky</SocialLink>
-            <SocialLink href="https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM" icon={SignalIcon}  className="mt-4">Ma messagerie (Signal)</SocialLink>
-            <SocialLink href="https://matrix.to/#/#discussions-avec-fx:matrix.org"  icon={MatrixIcon}  className="mt-4">Discutons sur Matrix</SocialLink>
+            <SocialLink href="https://github.com/tnntwister" icon={GitHubIcon} className="mt-4">Mon code public (GitHub)</SocialLink>
+            <SocialLink href="https://www.linkedin.com/in/francois-xavier-guillois/" icon={LinkedInIcon} className="mt-4">Mon compte pro (LinkedIn)</SocialLink>
+            <SocialLink href="https://bsky.app/profile/fxguillois.bsky.social" icon={BlueSkyIcon} className="mt-4">Mon compte Bluesky</SocialLink>
+            <SocialLink href="https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM" icon={SignalIcon} className="mt-4">Ma messagerie (Signal)</SocialLink>
+            <SocialLink href="https://matrix.to/#/#discussions-avec-fx:matrix.org" icon={MatrixIcon} className="mt-4">Discutons sur Matrix</SocialLink>
             
             <SocialLink
               href="mailto:ecrire.a@scriptami.com"

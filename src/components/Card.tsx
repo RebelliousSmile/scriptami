@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import Image from 'next/image'
 
 function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -14,7 +15,7 @@ function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function Card<T extends React.ElementType = 'div'>({
+function Card<T extends React.ElementType = 'div'>({
   as,
   className,
   children,
@@ -122,3 +123,22 @@ Card.Eyebrow = function CardEyebrow<T extends React.ElementType = 'p'>({
     </Component>
   )
 }
+
+Card.Image = function CardImage({ src, alt, ...props }: { src: string; alt: string }) {
+  return (
+    <div className="relative mt-6 aspect-[16/9]">
+      <Image
+        src={src}
+        alt={alt}
+        sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 45vw, (min-width: 640px) 32rem, 100vw"
+        className="rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+        fill
+        priority
+        {...props}
+      />
+    </div>
+  )
+}
+
+export { Card }
+
