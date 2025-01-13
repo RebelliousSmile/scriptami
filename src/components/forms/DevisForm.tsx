@@ -34,7 +34,7 @@ export function DevisForm() {
       });
 
       if (!response.ok) {
-        throw new Error('Erreur lors de l\'envoi');
+        throw new Error("Erreur lors de l'envoi");
       }
 
       setSuccess(true);
@@ -66,7 +66,7 @@ export function DevisForm() {
                   Automatisation & IA
                 </span>
                 <span className="mt-1 flex items-center text-sm text-zinc-500 dark:text-zinc-400">
-                  Optimisation des processus et intégration d'IA
+                  Optimisation des processus et intégration d&apos;IA
                 </span>
               </span>
             </span>
@@ -236,9 +236,9 @@ export function DevisForm() {
             className="h-4 w-4 rounded border-zinc-300 text-teal-600 focus:ring-teal-500 dark:border-zinc-700 dark:bg-zinc-700/[0.15]"
           />
           <span className="text-sm text-zinc-600 dark:text-zinc-400">
-            J'ai lu et j'accepte les{' '}
+            J&apos;ai lu et j&apos;accepte les{' '}
             <Link href="/mentions-legales-scriptami" className="text-teal-500 hover:text-teal-600 dark:text-teal-400">
-              conditions générales d'utilisation
+              conditions générales d&apos;utilisation
             </Link>
           </span>
         </label>

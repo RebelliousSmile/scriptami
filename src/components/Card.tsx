@@ -78,17 +78,17 @@ Card.Description = function CardDescription({
   )
 }
 
-Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
+function CardCta({ children, href }: { children: React.ReactNode; href: string }) {
   return (
-    <div
-      aria-hidden="true"
-      className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
-    >
-      {children}
-      <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
+    <div className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+      <Link href={href}>
+        <span className="ml-2">{children}</span>
+      </Link>
     </div>
   )
 }
+
+Card.Cta = CardCta
 
 Card.Eyebrow = function CardEyebrow<T extends React.ElementType = 'p'>({
   as,

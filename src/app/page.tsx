@@ -12,9 +12,6 @@ import {
   BlueSkyIcon,
   MatrixIcon
 } from '@/components/SocialIcons'
-import logoWordpress from '@/images/logos/animaginary.svg'
-import logoNextjs from '@/images/logos/airbnb.svg'
-import logoReact from '@/images/logos/planetaria.svg'
 import image1 from '@/images/photos/select_1.png'
 import image2 from '@/images/photos/select_2.jpg'
 import image3 from '@/images/photos/select_3.jpg'
@@ -26,13 +23,29 @@ import image8 from '@/images/photos/select_8.jpg'
 import image9 from '@/images/photos/select_9.jpg'
 import image10 from '@/images/photos/select_10.jpg'
 
-// create an array of images
-const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10]
+// create an array of images with alt text
+const images: ImageProps[] = [
+  { src: image1, alt: "Image 1" },
+  { src: image2, alt: "Image 2" },
+  { src: image3, alt: "Image 3" },
+  { src: image4, alt: "Image 4" },
+  { src: image5, alt: "Image 5" },
+  { src: image6, alt: "Image 6" },
+  { src: image7, alt: "Image 7" },
+  { src: image8, alt: "Image 8" },
+  { src: image9, alt: "Image 9" },
+  { src: image10, alt: "Image 10" }
+]
 
 // select 5 random images from the array
-const randomImages = images.sort(() => 0.5 - Math.random()).slice(0, 5);
+const randomImages = images.sort(() => 0.5 - Math.random()).slice(0, 5)
 
-import { formatDate } from '@/lib/formatDate'
+import { getAllArticles } from '@/lib/articles'
+import type { ArticleWithSlug } from '@/lib/articles'
+import { Article } from '@/components/home/Article'
+import { Role } from '@/components/home/Role'
+import { SocialLink } from '@/components/home/SocialLink'
+import { Photos } from '@/components/home/Photos'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -93,18 +106,6 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function SocialLink({
-  icon: Icon,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Link> & {
-  icon: React.ComponentType<{ className?: string }>
-}) {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-    </Link>
-  )
-}
 
 function Newsletter() {
   return (
@@ -137,57 +138,13 @@ function Newsletter() {
   )
 }
 
-interface Role {
-  company: string
-  title: string
-  logo: ImageProps['src']
-  start: string | { label: string; dateTime: string }
-  end: string | { label: string; dateTime: string }
-}
-
-function Role({ role }: { role: Role }) {
-  let startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
-  let startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
-
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
-
-  return (
-    <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
-      </div>
-      <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Company</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
-        </dd>
-        <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-          {role.title}
-        </dd>
-        <dt className="sr-only">Date</dt>
-        <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
-        >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
-          <time dateTime={endDate}>{endLabel}</time>
-        </dd>
-      </dl>
-    </li>
-  )
-}
 
 function Resume() {
   let resume = [
     {
       company: 'Wordpress',
       title: 'Développement, maintenance',
-      logo: logoWordpress,
+      logo: '/images/logos/wordpress.svg',
       start: {
         label: 'Toutes',
         dateTime: "6.4.3"
@@ -198,18 +155,25 @@ function Resume() {
       },
     },
     {
+      company: 'Prestashop',
+      title: 'Développement, maintenance',
+      logo: '/images/logos/prestashop.svg',
+      start: '1.6',
+      end: '8',
+    },
+    {
       company: 'Next.js',
       title: 'Développement, Mise à jour',
-      logo: logoNextjs,
+      logo: '/images/logos/nextjs.svg',
       start: '1.5',
       end: '8',
     },
     {
-      company: 'React',
+      company: 'Nuxt',
       title: 'Développement, Mise à jour',
-      logo: logoReact,
-      start: '16',
-      end: '18',
+      logo: '/images/logos/nuxt.svg',
+      start: '2',
+      end: '3',
     }
   ]
 
@@ -232,34 +196,10 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {randomImages.map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-              rotations[imageIndex % rotations.length],
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
 
 export default async function Home() {
+  let articles = (await getAllArticles()).slice(0, 4)
+
   return (
     <>
       <Container className="mt-9">
@@ -274,27 +214,57 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://github.com/tnntwister"
-              target= '_blank'
-              aria-label="Mes projets GitHub"
-              icon={GitHubIcon}
+              social={{
+                href: "https://github.com/tnntwister",
+                target: '_blank',
+                label: "Mes projets GitHub",
+                icon: GitHubIcon
+              }}
             />
             <SocialLink
-              href="https://www.linkedin.com/in/francois-xavier-guillois/"
-              target='_blank'
-              aria-label="Compte pro (LinkedIn)"
-              icon={LinkedInIcon}
+              social={{
+                href: "https://www.linkedin.com/in/francois-xavier-guillois/",
+                target: '_blank',
+                label: "Compte pro (LinkedIn)",
+                icon: LinkedInIcon
+              }}
             />
-            <SocialLink href="https://bsky.app/profile/fxguillois.bsky.social"  target='_blank' aria-label="Compte Bluesky" icon={BlueSkyIcon} />
-            <SocialLink href="https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM"  target='_blank' aria-label="Messagerie instantanée (Signal)" icon={SignalIcon} />
-            <SocialLink href="https://matrix.to/#/#discussions-avec-fx:matrix.org"  target='_blank' aria-label="Discutons sur Matrix" icon={MatrixIcon} />
+            <SocialLink 
+              social={{
+                href: "https://bsky.app/profile/fxguillois.bsky.social",
+                target: '_blank',
+                label: "Compte Bluesky",
+                icon: BlueSkyIcon
+              }}
+            />
+            <SocialLink 
+              social={{
+                href: "https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM",
+                target: '_blank',
+                label: "Messagerie instantanée (Signal)",
+                icon: SignalIcon
+              }}
+            />
+            <SocialLink 
+              social={{
+                href: "https://matrix.to/#/#discussions-avec-fx:matrix.org",
+                target: '_blank',
+                label: "Discutons sur Matrix",
+                icon: MatrixIcon
+              }}
+            />
           </div>
           
         </div>
       </Container>
-      <Photos />
+      <Photos photos={randomImages} />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div className="flex flex-col gap-16">
+            {articles.map((article) => (
+              <Article key={article.slug} article={article} />
+            ))}
+          </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
             <Resume />

@@ -1,6 +1,6 @@
-import { Metadata } from 'next'
+import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Demande de devis',
-  description: 'Formulaire de demande de devis pour vos projets web, e-commerce ou d\'automatisation.',
+  title: 'Devis Gratuit - Développement Web',
+  description: 'Demandez un devis gratuit pour votre projet de développement web, automatisation ou formation.',
 } 

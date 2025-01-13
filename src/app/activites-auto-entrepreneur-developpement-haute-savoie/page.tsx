@@ -1,3 +1,5 @@
+'use client'
+
 import { Container } from '@/components/Container'
 import { activitesContent } from '@/data/activites'
 import { Activity } from '@/components/Activity'
@@ -24,7 +26,7 @@ export default function ActivitesPage() {
                   <SectionTitle>{section.title}</SectionTitle>
                   <div className="md:col-span-3">
                     <ul role="list" className="space-y-16">
-                      {section.activities.map((activity) => (
+                      {section.items.map((activity) => (
                         <Activity key={activity.title} title={activity.title}>
                           {activity.description}
                         </Activity>

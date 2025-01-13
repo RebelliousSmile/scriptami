@@ -1,13 +1,15 @@
-export const activitesContent = {
+import { type PageContent, type Activity } from '@/types/content'
+
+export const activitesContent: PageContent<Activity> = {
   header: {
     title: "J'accompagne mes clients afin de les autonomiser dans leurs défis numériques.",
-    intro: "Internet est un marché qui change constamment de configuration et d'agenda. Développeur dans ma première vie, je mets à profit mon expérience et ma vision d'internet pour aider celles et ceux qui ont besoin d'un bagage technique. Je leur sers de canne le temps qu'ils se remettent debout après avoir buté sur des gros cailloux. Contactez-moi et soyez le/la prochain.e."
+    intro: "Internet est un marché qui change constamment de configuration et d'agenda..."
   },
   sections: [
     {
       id: "development",
       title: "Développement",
-      activities: [
+      items: [
         {
           title: "Créer et maintenir son site vitrine",
           description: "Les CMS et solutions no-code ont révolutionné votre capacité à créer leur propre vitrine numérique. Parfois, vous êtes perdu.e parmi les possibles, submergé.e par la somme de connaissance à acquérir. Nous faisons le tri ensemble, nous fixons les prochains caps, et je vous donne les clés pour les atteindre."
@@ -25,7 +27,7 @@ export const activitesContent = {
     {
       id: "formation",
       title: "Formation",
-      activities: [
+      items: [
         {
           title: "Conduite accompagnée vers la mise en ligne",
           description: "Vous avez besoin de comprendre comment fonctionne votre site, comment le mettre à jour, comment le faire évoluer. Je vous accompagne dans la prise en main de votre outil, je crée la documentation qui vous manque pour vous y retrouver, et je vous fais faire des exercices pour m'assurer de votre montée en compétence."
@@ -39,7 +41,7 @@ export const activitesContent = {
     {
       id: "other",
       title: "Hors cadre",
-      activities: [
+      items: [
         {
           title: "Ecrivain public",
           description: "Que vous cherchez à créer du contenu optimisé pour le web (SEO), un relecteur compétent ou une plume pour rédiger vos newsletters et vos emails, je mets à votre disposition mon expérience de la rédaction pour écrire vite et bien."

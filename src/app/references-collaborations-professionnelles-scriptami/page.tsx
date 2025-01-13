@@ -1,35 +1,12 @@
-import { type Metadata } from 'next'
+'use client'
 
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
-import { SimpleLayout } from '@/components/SimpleLayout'
+import { Container } from '@/components/Container'
 import { references } from '@/data/references'
 import { type Reference } from '@/types/Reference'
+import { Card } from '@/components/Card'
+import { SectionTitle } from '@/components/SectionTitle'
 
-function SpeakingSection({
-  children,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Section>) {
-  return (
-    <Section {...props}>
-      <div className="space-y-16">{children}</div>
-    </Section>
-  )
-}
-
-function Appearance({
-  title,
-  description,
-  event,
-  cta,
-  href,
-}: {
-  title: string
-  description: string
-  event: string
-  cta: string
-  href: string
-}) {
+function ReferenceItem({ title, description, event, cta, href }: Reference) {
   return (
     <Card as="article">
       <Card.Title as="h3" href={href}>
@@ -37,18 +14,12 @@ function Appearance({
       </Card.Title>
       <Card.Eyebrow decorate>{event}</Card.Eyebrow>
       <Card.Description>{description}</Card.Description>
-      <Card.Cta>{cta}</Card.Cta>
+      <Card.Cta href={href}>{cta}</Card.Cta>
     </Card>
   )
 }
 
-export const metadata: Metadata = {
-  title: 'Collaborations professionnelles',
-  description:
-    "Ce que j'apprécie dans mon métier, c'est de partager un bout de chemin avec des entrepreneurs, des gens qui ont un objectif. Mon but: les aider à l'atteindre.",
-}
-
-export default function Speaking() {
+export default function ReferencesPage() {
   const referencesByCategory = references.reduce((acc, reference) => {
     if (!acc[reference.category]) {
       acc[reference.category] = []
@@ -58,26 +29,40 @@ export default function Speaking() {
   }, {} as Record<Reference['category'], Reference[]>)
 
   return (
-    <SimpleLayout
-      title="Mes collaborations professionnelles en 2024"
-      intro="Ce que j'apprécie dans mon métier, c'est de partager un bout de chemin avec des entrepreneurs, des gens qui ont un objectif. Mon but: les aider à l'atteindre. Il n'y a pas que des happy end, la conjoncture ou les divergences artistiques m'éloignent parfois des personnes avec qui j'ai travaillées, mais j'accorde plus d'attention au chemin qu'à la destination, si bien que je reste malgré tout admiratif des rencontres que j'ai faites, année après année, qui ont construit mon parcours."
-    >
-      <div className="space-y-20">
-        {Object.entries(referencesByCategory).map(([category, categoryReferences]) => (
-          <SpeakingSection key={category} title={category}>
-            {categoryReferences.map((reference) => (
-              <Appearance
-                key={reference.href}
-                href={reference.href}
-                title={reference.title}
-                description={reference.description}
-                event={reference.event}
-                cta={reference.cta}
-              />
+    <Container className="mt-16 sm:mt-32">
+      <div className="mx-auto max-w-2xl lg:max-w-5xl">
+        <header className="max-w-2xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            Mes collaborations professionnelles en 2024
+          </h1>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            Ce que j&apos;apprécie dans mon métier, c&apos;est de partager un bout de chemin avec des entrepreneurs, 
+            des gens qui ont un objectif. Mon but: les aider à l&apos;atteindre.
+          </p>
+        </header>
+
+        <div className="mt-16 sm:mt-20">
+          <div className="space-y-20">
+            {Object.entries(referencesByCategory).map(([category, categoryReferences]) => (
+              <section 
+                key={category} 
+                className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40"
+              >
+                <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                  <SectionTitle>{category}</SectionTitle>
+                  <div className="md:col-span-3">
+                    <div className="space-y-16">
+                      {categoryReferences.map((reference) => (
+                        <ReferenceItem key={reference.href} {...reference} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </section>
             ))}
-          </SpeakingSection>
-        ))}
+          </div>
+        </div>
       </div>
-    </SimpleLayout>
+    </Container>
   )
 }

@@ -1,4 +1,4 @@
-import { Reference } from '@/types/Reference'
+import { type Reference } from '@/types/Reference'
 
 export const references: Reference[] = [
   {
@@ -22,7 +22,7 @@ export const references: Reference[] = [
     href: 'https://www.letempsdunebox.com/',
     title: 'Collab avec Sandra Lebre-Akli',
     description: "J'ai créé cette boutique Woocommerce pour Sandra il y a 5 ans, et depuis nous faisons évoluer son site en fonction de ses projets et de ses nouvelles perspectives professionnelles.",
-    event: 'Le temps d\'une box',
+    event: "Le temps d'une box",
     cta: 'Rester zen en toutes circonstances',
   },
   {
