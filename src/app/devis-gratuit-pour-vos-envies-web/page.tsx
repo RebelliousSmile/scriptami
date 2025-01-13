@@ -1,5 +1,5 @@
 import { SimpleLayout } from '@/components/SimpleLayout'
-import { DevisForm } from './DevisForm'
+import { DevisForm } from '@/components/forms/DevisForm'
 import { metadata } from './page.metadata'
 
 export { metadata }

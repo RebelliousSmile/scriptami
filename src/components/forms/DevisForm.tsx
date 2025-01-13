@@ -1,18 +1,20 @@
-'use client'
-import { useState, FormEvent } from 'react'
-import { Button } from '@/components/Button'
+'use client';
+
+import React, { useState, FormEvent } from 'react';
+import Link from 'next/link';
+import { Button } from '@/components/Button';
 
 export function DevisForm() {
-  const [sending, setSending] = useState(false)
-  const [error, setError] = useState('')
-  const [success, setSuccess] = useState(false)
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setSending(true)
-    setError('')
+    e.preventDefault();
+    setSending(true);
+    setError('');
 
-    const formData = new FormData(e.currentTarget)
+    const formData = new FormData(e.currentTarget);
     try {
       const response = await fetch('/api/devis', {
         method: 'POST',
@@ -29,17 +31,17 @@ export function DevisForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-      })
+      });
 
       if (!response.ok) {
-        throw new Error('Erreur lors de l\'envoi')
+        throw new Error('Erreur lors de l\'envoi');
       }
 
-      setSuccess(true)
+      setSuccess(true);
     } catch (err) {
-      setError('Une erreur est survenue. Veuillez réessayer.')
+      setError('Une erreur est survenue. Veuillez réessayer.');
     } finally {
-      setSending(false)
+      setSending(false);
     }
   }
 
@@ -49,13 +51,13 @@ export function DevisForm() {
         <label className="text-sm font-medium text-zinc-800 dark:text-zinc-200">
           Type de projet
         </label>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-4">
           <label className="relative flex cursor-pointer rounded-lg border border-zinc-200 p-4 hover:bg-zinc-50 dark:border-zinc-700/40 dark:hover:bg-zinc-800/50">
             <input
               type="radio"
               name="type"
               value="automatisation"
-              className="sr-only"
+              className="sr-only peer"
               required
             />
             <span className="flex flex-1">
@@ -75,7 +77,7 @@ export function DevisForm() {
               type="radio"
               name="type"
               value="securite"
-              className="sr-only"
+              className="sr-only peer"
               required
             />
             <span className="flex flex-1">
@@ -95,7 +97,7 @@ export function DevisForm() {
               type="radio"
               name="type"
               value="ecommerce"
-              className="sr-only"
+              className="sr-only peer"
               required
             />
             <span className="flex flex-1">
@@ -105,6 +107,26 @@ export function DevisForm() {
                 </span>
                 <span className="mt-1 flex items-center text-sm text-zinc-500 dark:text-zinc-400">
                   Solutions de vente en ligne performantes
+                </span>
+              </span>
+            </span>
+            <span className="pointer-events-none absolute -inset-px rounded-lg border-2 border-transparent peer-checked:border-teal-500" aria-hidden="true" />
+          </label>
+          <label className="relative flex cursor-pointer rounded-lg border border-zinc-200 p-4 hover:bg-zinc-50 dark:border-zinc-700/40 dark:hover:bg-zinc-800/50">
+            <input
+              type="radio"
+              name="type"
+              value="autre"
+              className="sr-only peer"
+              required
+            />
+            <span className="flex flex-1">
+              <span className="flex flex-col">
+                <span className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                  Autre projet
+                </span>
+                <span className="mt-1 flex items-center text-sm text-zinc-500 dark:text-zinc-400">
+                  Un autre type de projet à discuter
                 </span>
               </span>
             </span>
@@ -205,21 +227,38 @@ export function DevisForm() {
         />
       </div>
 
-      {error && (
-        <p className="text-sm text-red-600 dark:text-red-400">
-          {error}
-        </p>
-      )}
+      <div className="flex items-center justify-between mt-6">
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            name="cgu"
+            required
+            className="h-4 w-4 rounded border-zinc-300 text-teal-600 focus:ring-teal-500 dark:border-zinc-700 dark:bg-zinc-700/[0.15]"
+          />
+          <span className="text-sm text-zinc-600 dark:text-zinc-400">
+            J'ai lu et j'accepte les{' '}
+            <Link href="/mentions-legales-scriptami" className="text-teal-500 hover:text-teal-600 dark:text-teal-400">
+              conditions générales d'utilisation
+            </Link>
+          </span>
+        </label>
 
-      {success ? (
-        <p className="text-sm text-green-600 dark:text-green-400">
-          Votre message a bien été envoyé. Je vous recontacterai dans les plus brefs délais.
-        </p>
-      ) : (
-        <Button type="submit" disabled={sending}>
-          {sending ? 'Envoi en cours...' : 'Envoyer'}
-        </Button>
-      )}
+        {error && (
+          <p className="text-sm text-red-600 dark:text-red-400">
+            {error}
+          </p>
+        )}
+
+        {success ? (
+          <p className="text-sm text-green-600 dark:text-green-400">
+            Votre message a bien été envoyé. Je vous recontacterai dans les plus brefs délais.
+          </p>
+        ) : (
+          <Button type="submit" disabled={sending} className="inline-block">
+            {sending ? 'Envoi en cours...' : 'Envoyer'}
+          </Button>
+        )}
+      </div>
     </form>
-  )
+  );
 } 
