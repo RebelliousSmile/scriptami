@@ -20,12 +20,11 @@ export const forcesContent: PageContent<Force> = {
           },
           links: {
             references: [
-              { title: "Projet d'automatisation pour Cabinet Médical", href: "https://example.com/case1" },
-              { title: "Solution IA pour la gestion documentaire", href: "https://example.com/case2" }
+             /* { title: "La communauté AI-Driven-Dev", href: "https://ai-driven-dev.com/" },
+              { title: "Solution IA pour la gestion documentaire", href: "https://example.com/case2" }*/
             ],
             moreInfo: [
-              { title: "Guide de l'automatisation des processus", href: "/guides/automation" },
-              { title: "Intégration de l'IA dans votre entreprise", href: "/guides/ai-integration" }
+              { title: "La communauté AI-Driven-Dev", href: "https://ai-driven-dev.com/" }
             ]
           }
         },
@@ -38,12 +37,11 @@ export const forcesContent: PageContent<Force> = {
           },
           links: {
             references: [
-              { title: "Audit de sécurité pour une banque", href: "https://example.com/case3" },
-              { title: "Implémentation de la conformité GDPR", href: "https://example.com/case4" }
+              { title: "Je développe pour SmartLockers", href: "https://www.smartlockers.io/" },
+              { title: "Mes cabinets partagés, avec des serrures connectées", href: "https://www.cabinet-partage.fr/" }
             ],
             moreInfo: [
-              { title: "Guide de la sécurité des données", href: "/guides/data-security" },
-              { title: "Comprendre la conformité GDPR", href: "/guides/gdpr-compliance" }
+              { title: "Luckey, pour vos serrures connectées", href: "https://luckeystore.sofialocks.com/fr/" }
             ]
           }
         },
@@ -56,12 +54,12 @@ export const forcesContent: PageContent<Force> = {
           },
           links: {
             references: [
-              { title: "Création d'un site e-commerce", href: "https://example.com/case5" },
-              { title: "Développement d'une application de gestion de projet", href: "https://example.com/case6" }
+              { title: "Shop en woocommerce", href: "https://www.letempsdunebox.fr/" },
+              { title: "Boutique en prestashop 7/8/9", href: "https://www.bikly.fr/" }
             ],
             moreInfo: [
-              { title: "Tendances du développement web", href: "/guides/web-development-trends" },
-              { title: "Meilleures pratiques de sécurité web", href: "/guides/web-security-best-practices" }
+              { title: "Description de Prestashop 9", href: "https://www.beyonds.fr/blog/prestashop-9/" },
+              { title: "Payez en crypto-monnaie", href: "https://www.coinbase.com/" }
             ]
           }
         }
