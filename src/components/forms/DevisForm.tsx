@@ -18,19 +18,7 @@ export function DevisForm() {
     try {
       const response = await fetch('/api/devis', {
         method: 'POST',
-        body: JSON.stringify({
-          name: formData.get('name'),
-          email: formData.get('email'),
-          phone: formData.get('phone'),
-          type: formData.get('type'),
-          company: formData.get('company'),
-          budget: formData.get('budget'),
-          timeline: formData.get('timeline'),
-          message: formData.get('message'),
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        body: formData,
       });
 
       if (!response.ok) {
