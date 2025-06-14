@@ -134,7 +134,7 @@ function MobileNavigation(
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/portrait-francois-xavier-guillois">Portrait</MobileNavItem>
                 <MobileNavItem href="/activites-auto-entrepreneur-developpement-haute-savoie">Activités</MobileNavItem>
-                <MobileNavItem href="/automatisation-controle-acces-e-commerce">Mes forces</MobileNavItem>
+                <MobileNavItem href="/automatisation-controle-acces-e-commerce">Nos Forces</MobileNavItem>
                 <MobileNavItem href="/references-collaborations-professionnelles-scriptami">Références</MobileNavItem>
                 <MobileNavItem href="/devis-gratuit-pour-vos-envies-web">Devis</MobileNavItem>
               </ul>
