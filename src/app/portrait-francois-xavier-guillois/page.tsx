@@ -76,18 +76,17 @@ export default function About() {
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            C&ocirc;t&eacute; professionnel, j&#039;ai fait partie des early adopters d&#039;internet, et depuis je ne cesse de m&#039;&eacute;merveiller de ses projets. En parent responsable, je condamne aussi ses exc&egrave;s, ses d&eacute;rives. Avec l&#039;arriv&eacute;e de l&#039;IA, d&eacute;finir son &eacute;thique, penser au co&ucirc;t carbone de ses d&eacute;veloppements, 
-            est devenu aussi important que de s&#039;assurer de la qualit&eacute; de ses algorithmes.
+            C&ocirc;t&eacute; professionnel, j&#039;ai fait partie des early adopters d&#039;internet, et depuis je ne cesse de m&#039;&eacute;merveiller de son évolution. En parent responsable, je condamne aussi ses exc&egrave;s, ses d&eacute;rives. Avec l&#039;arriv&eacute;e de l&#039;IA, d&eacute;finir son &eacute;thique, penser au co&ucirc;t carbone de ses d&eacute;veloppements, est devenu aussi important que de s&#039;assurer de la qualit&eacute; de ses algorithmes.
             </p>
             <p>
             C&ocirc;t&eacute; personnel, j&#039;aime me servir de ma t&ecirc;te, qu&#039;il s&#039;agisse de lecture, d&#039;un jeu de plateau ou de parties de jeu de r&ocirc;les. J&#039;aime aussi me servir de mes muscles, dans le jardin, en randonn&eacute;e, en v&eacute;lo. 
               Enfin, j&#039;aime aussi le d&eacute;veloppement personnel, j&#039;ai un dipl&ocirc;me de psychologie et je fais des stages de m&eacute;ditation, de yoga et de Qi Gong. 
             </p>
             <p>
-            Entre les deux, j&#039;aime d&eacute;velopper des lieux de vie, que ce soit ma maison construite avec des architectes, ou les cabinets de soins o&ugrave; le partage est au coeur du projet.
+            Entre les deux, j&#039;aime d&eacute;velopper des lieux de vie, que ce soit ma maison d'architecte, ou les cabinets de soins o&ugrave; le partage est au coeur du projet.
             </p>
             <p>
-            Un coach m&#039;a dit : &quot;Le meilleur investissement que tu puisses faire c&#039;est sur toi-m&ecirc;me.&quot; C&#039;est le meilleure conseil que j&#039;ai re&ccedil;u, et m&#039;empresse de vous le transmettre &agrave; mon tour. N&#039;ayez jamais de cesse de vous d&eacute;velopper, de vous embellir, de vous d&eacute;passer. 
+            Un coach m&#039;a dit : &quot;Le meilleur investissement que tu puisses faire c&#039;est sur toi-m&ecirc;me.&quot; C&#039;est le meilleur conseil que j&#039;ai re&ccedil;u, et m&#039;empresse de vous le transmettre &agrave; mon tour. N&#039;ayez jamais de cesse de vous d&eacute;velopper, de vous embellir, de vous d&eacute;passer. 
             </p>
           </div>
         </div>
