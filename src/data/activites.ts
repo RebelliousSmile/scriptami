@@ -2,8 +2,8 @@ import { type PageContent, type Activity } from '@/types/content'
 
 export const activitesContent: PageContent<Activity> = {
   header: {
-    title: "J'accompagne mes clients",
-    intro: "...afin de les autonomiser dans leurs défis numériques. Internet est un marché qui change constamment de configuration et d'agenda. Mes 20 ans de pratique du World Wide Web, ayant surfé sur son évolution, me servent de socle pour vous conseiller et vous développer des réalisations adaptées à vos besoins."
+    title: "J'accompagne mes clients afin de les autonomiser dans leurs défis numériques.",
+    intro: "Internet est un marché qui change constamment de configuration et d'agenda..."
   },
   sections: [
     {
