@@ -7,9 +7,7 @@ import { Container } from '@/components/Container'
 import {
   GitHubIcon,
   LinkedInIcon,
-  SignalIcon,
-  DiscordIcon,
-  BlueSkyIcon,
+  ItchioIcon,
   MatrixIcon
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
@@ -52,7 +50,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'Portrait',
   description:
-    "Je m&apos;appelle François-Xavier Guillois. Je vis à Rumilly, en Haute-Savoie (74). Je combine un excellent cadre de vie avec un abonnement à la fibre pour vivre dans le meilleur des mondes.",
+    "Je m'appelle François-Xavier Guillois. Je vis à Rumilly, en Haute-Savoie (74). Je combine un excellent cadre de vie avec un abonnement à la fibre pour vivre dans le meilleur des mondes.",
 }
 
 export default function About() {
@@ -71,10 +69,10 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Après 20 ans d&apos;expérience, une nouvelle page se tourne.
+            Après 20 ans d'expérience, une nouvelle page se tourne.
           </h1>
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mt-4">
-            Depuis 20 ans, je me passionne pour l&apos;écriture du code. Aujourd&apos;hui, c&apos;est l&apos;IA qui l&apos;écrit pour moi. Moi, je gère le besoin de mes clients. Utiliser la technologie, c&apos;est ne jamais cesser d&apos;évoluer.
+            Depuis 20 ans, je me passionne pour l'écriture du code. Aujourd'hui, c'est l'IA qui l'écrit pour moi. Moi, je gère le besoin de mes clients. Utiliser la technologie, c'est ne jamais cesser d'évoluer.
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
@@ -97,8 +95,7 @@ export default function About() {
           <ul role="list">
             <SocialLink href="https://github.com/tnntwister" icon={GitHubIcon} className="mt-4">Mon code public (GitHub)</SocialLink>
             <SocialLink href="https://www.linkedin.com/in/francois-xavier-guillois/" icon={LinkedInIcon} className="mt-4">Mon compte pro (LinkedIn)</SocialLink>
-            <SocialLink href="https://bsky.app/profile/fxguillois.bsky.social" icon={BlueSkyIcon} className="mt-4">Mon compte Bluesky</SocialLink>
-            <SocialLink href="https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM" icon={SignalIcon} className="mt-4">Ma messagerie (Signal)</SocialLink>
+            <SocialLink href="https://rebellious-smile.itch.io/" icon={ItchioIcon} className="mt-4">Mon compte Bluesky</SocialLink>
             <SocialLink href="https://matrix.to/#/#discussions-avec-fx:matrix.org" icon={MatrixIcon} className="mt-4">Discutons sur Matrix</SocialLink>
             
             <SocialLink

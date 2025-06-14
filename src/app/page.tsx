@@ -7,10 +7,8 @@ import { Container } from '@/components/Container'
 import {
   GitHubIcon,
   LinkedInIcon,
-  DiscordIcon,
-  SignalIcon,
-  BlueSkyIcon,
-  MatrixIcon
+  MatrixIcon,
+  ItchioIcon
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/select_1.png'
 import image2 from '@/images/photos/select_2.jpg'
@@ -41,7 +39,6 @@ const images: ImageProps[] = [
 const randomImages = images.sort(() => 0.5 - Math.random()).slice(0, 5)
 
 import { getAllArticles } from '@/lib/articles'
-import type { ArticleWithSlug } from '@/lib/articles'
 import { Article } from '@/components/home/Article'
 import { Role } from '@/components/home/Role'
 import { SocialLink } from '@/components/home/SocialLink'
@@ -107,34 +104,23 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 
-function Newsletter() {
+function Focus() {
   return (
-    <form
-      action="/api/newsletter"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-      method="POST"
-    >
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Suivre mon actualité</span>
+        <BriefcaseIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">Mon projet : Cabinet-Partage.fr</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        J&apos;utilise les réseaux sociaux pour faire ma promotion professionnelle. Si vous voulez connaître mon actualité, laissez votre email pour cette lettre d&apos;information ; promis, pas plus de 10 dans l&apos;année. En laissant votre email, vous acceptez de recevoir des emails de ma part (voir conditions RPGD dans les mentions légales).
+        Je développe actuellement une plateforme pour les locataires de mes cabinets partagés pour gérer en ligne leur relations avec la SARL : réservation, paiement, contrats, quittances et factures, paiement en ligne, etc.
+        Avec les API, je débloque les serrures connectées en temps réel, en fonction des besoins des thérapeutes. Envie de développer la même synergie pour vos investissements fonciers ? Parlons-en !
       </p>
       <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
-          name="email"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          S&apos;inscrire
+        <Button href="https://cabinet-partage.fr" className="flex-none">
+          Découvrir le projet
         </Button>
       </div>
-    </form>
+    </div>
   )
 }
 
@@ -231,18 +217,10 @@ export default async function Home() {
             />
             <SocialLink 
               social={{
-                href: "https://bsky.app/profile/fxguillois.bsky.social",
+                href: "https://rebellious-smile.itch.io/",
                 target: '_blank',
-                label: "Compte Bluesky",
-                icon: BlueSkyIcon
-              }}
-            />
-            <SocialLink 
-              social={{
-                href: "https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM",
-                target: '_blank',
-                label: "Messagerie instantanée (Signal)",
-                icon: SignalIcon
+                label: "Mes productions jeux sur Itch.io",
+                icon: ItchioIcon
               }}
             />
             <SocialLink 
@@ -266,7 +244,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            <Focus />
             <Resume />
           </div>
         </div>
