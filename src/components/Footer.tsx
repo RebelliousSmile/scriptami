@@ -35,7 +35,7 @@ export function Footer() {
                 <NavLink href="/devis-gratuit-pour-vos-envies-web">Devis</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; 2024 François-Xavier Guillois, tous droits réservés - <NavLink href="/mentions-legales-scriptami">Mentions légales</NavLink>
+                &copy; 2024-2025 François-Xavier Guillois, tous droits réservés - <NavLink href="/mentions-legales-scriptami">Mentions légales</NavLink>
               </p>
             </div>
           </ContainerInner>

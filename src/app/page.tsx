@@ -7,10 +7,8 @@ import { Container } from '@/components/Container'
 import {
   GitHubIcon,
   LinkedInIcon,
-  DiscordIcon,
-  SignalIcon,
-  BlueSkyIcon,
-  MatrixIcon
+  MatrixIcon,
+  ItchioIcon
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/select_1.png'
 import image2 from '@/images/photos/select_2.jpg'
@@ -219,18 +217,10 @@ export default async function Home() {
             />
             <SocialLink 
               social={{
-                href: "https://bsky.app/profile/fxguillois.bsky.social",
+                href: "https://rebellious-smile.itch.io/",
                 target: '_blank',
-                label: "Compte Bluesky",
-                icon: BlueSkyIcon
-              }}
-            />
-            <SocialLink 
-              social={{
-                href: "https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM",
-                target: '_blank',
-                label: "Messagerie instantanée (Signal)",
-                icon: SignalIcon
+                label: "Mes productions jeux sur Itch.io",
+                icon: ItchioIcon
               }}
             />
             <SocialLink 
