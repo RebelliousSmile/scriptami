@@ -69,10 +69,10 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Après 20 ans d'expérience, une nouvelle page se tourne.
+            Après 20 ans d&apos;expérience, une nouvelle page se tourne.
           </h1>
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mt-4">
-            Depuis 20 ans, je me passionne pour l'écriture du code. Aujourd'hui, c'est l'IA qui l'écrit pour moi. Moi, je gère le besoin de mes clients. Utiliser la technologie, c'est ne jamais cesser d'évoluer.
+            Depuis 20 ans, je me passionne pour l&apos;écriture du code. Aujourd&apos;hui, c&apos;est l&apos;IA qui l&apos;écrit pour moi. Moi, je gère le besoin de mes clients. Utiliser la technologie, c&apos;est ne jamais cesser d&apos;évoluer.
           </h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
