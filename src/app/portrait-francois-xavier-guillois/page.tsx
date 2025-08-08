@@ -83,7 +83,7 @@ export default function About() {
               Enfin, j&#039;aime aussi le d&eacute;veloppement personnel, j&#039;ai un dipl&ocirc;me de psychologie et je fais des stages de m&eacute;ditation, de yoga et de Qi Gong. 
             </p>
             <p>
-            Entre les deux, j&#039;aime d&eacute;velopper des lieux de vie, que ce soit ma maison d'architecte, ou les cabinets de soins o&ugrave; le partage est au coeur du projet.
+            Entre les deux, j&#039;aime d&eacute;velopper des lieux de vie, que ce soit ma maison d&#039;architecte, ou les cabinets de soins o&ugrave; le partage est au coeur du projet.
             </p>
             <p>
             Un coach m&#039;a dit : &quot;Le meilleur investissement que tu puisses faire c&#039;est sur toi-m&ecirc;me.&quot; C&#039;est le meilleur conseil que j&#039;ai re&ccedil;u, et m&#039;empresse de vous le transmettre &agrave; mon tour. N&#039;ayez jamais de cesse de vous d&eacute;velopper, de vous embellir, de vous d&eacute;passer. 
