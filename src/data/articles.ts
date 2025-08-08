@@ -15,8 +15,8 @@ export const articles: ArticleWithSlug[] = [
   },
   {
     slug: 'intelligence-artificielle-developpement',
-    title: "Codez dès maintenant avec l'IA",
-    description: "La formation AI Driven Dev by Alexandre Soyer revient en force avec une V2 qui va booster votre productivité comme jamais ! Imaginez-vous maîtriser les outils d'IA les plus puissants du marché, transformer vos workflows et multiplier votre efficacité par 10. Cette nouvelle version capitalise sur des mois de retours terrain pour vous offrir un contenu ultra-optimisé et directement applicable dans vos projets. Le meilleur ? Vous pouvez rejoindre cette aventure grâce à mon parrainage, et intégrer une communauté dynamique de développeurs qui cartonnent déjà avec l'IA et qui partagent leurs succès au quotidien. Ne laissez pas passer cette chance de faire partie des devs qui auront toujours une longueur d'avance !",
+    title: "Développer à l'ère de l'IA",
+    description: "Depuis des mois, les outils de l'IA générative ont bouleversé la façon dont nous travaillons. Les développeurs doivent suivre la tendance sous peine d'être mis à l'écart. En tant que corporation, nous devons nous réinventer, trouver de nouvelles méthodes de travail, et nous adapter à un monde qui change rapidement. C'est pourquoi j'ai suivi la formation AI Driven Dev by Alexandre Soyer, et rejoint la communauté AAID qui rassemble plus de 2000 développeurs sur un discord dédié au développement avec l'IA.",
     href: '/portrait-francois-xavier-guillois'
   }
 ] 

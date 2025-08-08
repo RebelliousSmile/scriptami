@@ -94,7 +94,7 @@ export default function About() {
           <ul role="list">
             <SocialLink href="https://github.com/tnntwister" icon={GitHubIcon} className="mt-4">Mon code public (GitHub)</SocialLink>
             <SocialLink href="https://www.linkedin.com/in/francois-xavier-guillois/" icon={LinkedInIcon} className="mt-4">Mon compte pro (LinkedIn)</SocialLink>
-            <SocialLink href="https://rebellious-smile.itch.io/" icon={ItchioIcon} className="mt-4">Mon compte Bluesky</SocialLink>
+            <SocialLink href="https://rebellious-smile.itch.io/" icon={ItchioIcon} className="mt-4">Mon compte Itch.io</SocialLink>
             <SocialLink href="https://matrix.to/#/#discussions-avec-fx:matrix.org" icon={MatrixIcon} className="mt-4">Discutons sur Matrix</SocialLink>
             
             <SocialLink
