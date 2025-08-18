@@ -49,4 +49,12 @@ export const references: Reference[] = [
     event: "Tarifs euroceramic",
     cta: 'Créer du lien (QRCode) avec les acheteurs',
   },
+   {
+    category: 'WebApp',
+    href: 'https://www.jeveuxtravailler.com/',
+    title: 'Collab avec Paul-Pierre Gautier',
+    description: "Reprise d'un produit en Nuxt 3 et Firebase sur une mise en relation novatrice au niveau du recrutement.",
+    event: "Jeveuxtravailler/Jeveuxrecruter",
+    cta: 'Le job au bout du swipe',
+  },
 ] 

@@ -12,16 +12,16 @@ export const forcesContent: PageContent<Force> = {
       title: "Mes forces",
       items: [
         {
-          title: "Automatisation et IA",
-          description: "L'automatisation et l'intelligence artificielle permettent d'optimiser vos processus métier. De l'analyse initiale à la mise en production, je repasse tous vos processus à la loupe de l'IA pour les accélérer et les optimiser.",
+          title: "Interface besoin / solution",
+          description: "Le développeur a toujours eu le rôle de comprendre la partie métier du client pour faciliter son travail et lui amener, au delà de la visibilité facilitée par Internet, une vraie plus-value à s'installer sur la toile. Le développement piloté par l'IA renforce cette approche. De l'analyse initiale à la mise en production, je prépare tous vos processus pour que l'IA les code et je contrôle le résultat.",
           image: {
             src: "/images/forces/automation.jpg",
             alt: "Automatisation et Intelligence Artificielle"
           },
           links: {
             references: [
-             /* { title: "La communauté AI-Driven-Dev", href: "https://ai-driven-dev.com/" },
-              { title: "Solution IA pour la gestion documentaire", href: "https://example.com/case2" }*/
+              { title: "Du Excel aux QR Codes sur les dalles de carrelage", href: "https://www.mes-tarifs.com/" },
+              { title: "Refonte d'un site novateur pour le recrutement", href: "https://www.jeveuxtravailler.com/" }
             ],
             moreInfo: [
               { title: "La communauté AI-Driven-Dev", href: "https://ai-driven-dev.com/" }
@@ -54,8 +54,8 @@ export const forcesContent: PageContent<Force> = {
           },
           links: {
             references: [
-              { title: "Shop en woocommerce", href: "https://www.letempsdunebox.fr/" },
-              { title: "Boutique en prestashop 7/8/9", href: "https://www.bikly.fr/" }
+              { title: "Brizz (Prestashop 8)", href: "https://brizz.fr/" },
+              { title: "Bikly (Prestashop 7/8", href: "https://www.bikly.fr/" }
             ],
             moreInfo: [
               { title: "Description de Prestashop 9", href: "https://www.beyonds.fr/blog/prestashop-9/" },
