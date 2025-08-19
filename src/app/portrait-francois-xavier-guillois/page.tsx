@@ -120,6 +120,7 @@ export default function About() {
               <div>
                 <p className="font-semibold text-zinc-800 dark:text-zinc-200">Vous : Un conseil pour ceux qui veulent travailler avec l&rsquo;IA sans s&rsquo;y perdre ?</p>
                 <p>Moi : Intéressez-vous aux neurosciences, à la plasticité du cerveau, profitez du temps gagné avec les nouveaux outils pour apprendre de nouvelles compétences, vous donner de nouveaux défis que vous ne déléguerez pas à la machine. Un coach m&rsquo;a dit : &ldquo;Le meilleur investissement que tu puisses faire, c&rsquo;est sur toi-même.&rdquo; Plus nous sommes aidés par les machines, plus nous devons prendre garde à garder notre valeur. Pour notre santé, pour notre bien-être mental.</p>
+
               </div>
             </div>
           </div>
@@ -139,11 +140,11 @@ export default function About() {
               ecrire.a@scriptami.com
             </SocialLink>
           </ul>
-          <p className="mt-12 space-y-7 text-sm text-zinc-600 dark:text-zinc-400 leading-9">
-            François-Xavier Guillois<br />
-            Rumilly, Haute-Savoie (74)<br />
-            tél : <a href="tel:0638056100">0638 056 100</a>
-          </p>
+          <div className="mt-12 text-sm text-zinc-600 dark:text-zinc-400">
+            <p>François-Xavier Guillois</p>
+            <p>Rumilly, Haute-Savoie (74)</p>
+            <p>tél : <a href="tel:0638056100" className="hover:text-zinc-800 dark:hover:text-zinc-200">0638 056 100</a></p>
+          </div>
         </div>
       </div>
     </Container>

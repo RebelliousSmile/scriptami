@@ -29,23 +29,6 @@ export const forcesContent: PageContent<Force> = {
           }
         },
         {
-          title: "Contrôle d'accès",
-          description: "Un autre secteur en plein essor : les casiers connectés (et leur pendant : les serrures connectées). Grâce à des API modernes, contrôlez l'accès à vos biens ou à des services à distance, le tout dans votre poche sur votre smartphone.",
-          image: {
-            src: "/images/forces/security.jpg",
-            alt: "Sécurité et Conformité"
-          },
-          links: {
-            references: [
-              { title: "Je développe pour SmartLockers", href: "https://www.smartlockers.io/" },
-              { title: "Mes cabinets partagés, avec des serrures connectées", href: "https://www.cabinet-partage.fr/" }
-            ],
-            moreInfo: [
-              { title: "Luckey, pour vos serrures connectées", href: "https://luckeystore.sofialocks.com/fr/" }
-            ]
-          }
-        },
-        {
           title: "E-commerce",
           description: "Gros acheteur par correspondance, Internet a révolutionné la manière dont je consommais. et je me suis vite passionné pour les sites de vente, au point de m'être formé à la plupart d'entre eux : OsCommerce, Prestashop, Magento, Woocommerce... Les modifications actuelles du développement et de la recherche en ligne amène l'e-commerce dans de nouveaux défis : parlons-en ensemble !",
           image: {
@@ -60,6 +43,23 @@ export const forcesContent: PageContent<Force> = {
             moreInfo: [
               { title: "Description de Prestashop 9", href: "https://www.beyonds.fr/blog/prestashop-9/" },
               { title: "Payez en crypto-monnaie", href: "https://www.coinbase.com/" }
+            ]
+          }
+        },
+        {
+          title: "Contrôle d'accès",
+          description: "Un autre secteur en plein essor : les casiers connectés (et leur pendant : les serrures connectées). Grâce à des API modernes, contrôlez l'accès à vos biens ou à des services à distance, le tout dans votre poche sur votre smartphone.",
+          image: {
+            src: "/images/forces/security.jpg",
+            alt: "Sécurité et Conformité"
+          },
+          links: {
+            references: [
+              { title: "Je développe pour SmartLockers", href: "https://www.smartlockers.io/" },
+              { title: "Mes cabinets partagés, avec des serrures connectées", href: "https://www.cabinet-partage.fr/" }
+            ],
+            moreInfo: [
+              { title: "Luckey, pour vos serrures connectées", href: "https://luckeystore.sofialocks.com/fr/" }
             ]
           }
         }

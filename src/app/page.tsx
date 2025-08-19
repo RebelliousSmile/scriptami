@@ -10,33 +10,30 @@ import {
   MatrixIcon,
   ItchioIcon
 } from '@/components/SocialIcons'
-import image1 from '@/images/photos/select_1.png'
-import image2 from '@/images/photos/select_2.jpg'
-import image3 from '@/images/photos/select_3.jpg'
-import image4 from '@/images/photos/select_4.jpeg'
-import image5 from '@/images/photos/select_5.jpg'
-import image6 from '@/images/photos/select_6.jpg'
-import image7 from '@/images/photos/select_7.jpg'
-import image8 from '@/images/photos/select_8.jpg'
-import image9 from '@/images/photos/select_9.jpg'
-import image10 from '@/images/photos/select_10.jpg'
+import { thoughts } from '@/data/thoughts'
 
-// create an array of images with alt text
-const images: ImageProps[] = [
-  { src: image1, alt: "Image 1" },
-  { src: image2, alt: "Image 2" },
-  { src: image3, alt: "Image 3" },
-  { src: image4, alt: "Image 4" },
-  { src: image5, alt: "Image 5" },
-  { src: image6, alt: "Image 6" },
-  { src: image7, alt: "Image 7" },
-  { src: image8, alt: "Image 8" },
-  { src: image9, alt: "Image 9" },
-  { src: image10, alt: "Image 10" }
-]
+// Fonction pour mélanger un tableau
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  return shuffled
+}
 
-// select 5 random images from the array
-const randomImages = images.sort(() => 0.5 - Math.random()).slice(0, 5)
+// Récupérer seulement les images du mur de pensées
+const thoughtImages = thoughts
+  .filter(thought => thought.type === 'image' && thought.image)
+  .map(thought => ({
+    src: thought.image!.src,
+    alt: thought.image!.alt,
+    width: 400,
+    height: 400
+  }))
+
+// Sélectionner 5 images aléatoires
+const randomImages = shuffleArray(thoughtImages).slice(0, 5)
 
 import { getAllArticles } from '@/lib/articles'
 import { Article } from '@/components/home/Article'
