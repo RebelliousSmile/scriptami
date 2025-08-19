@@ -23,26 +23,26 @@ export const favoritesContent: PageContent<FavoriteProject> = {
       items: [
         {
           title: "ONET - Aéroports de Paris",
-          description: "Être le seul développeur sur un projet, c'est exactement ce que j'aime",
-          content: "Je suis développeur unique sur la solution logicielle des casiers connectés pour les agents des aéroports de Paris. SmartLockers s'occupe du hardware, moi du software. Ce qui me plaît : avoir la responsabilité complète du code, prendre toutes les décisions techniques, et voir directement l'impact de mon travail sur le terrain. Relation directe avec ONET, autonomie totale sur les choix techniques. Pas de comité de décision, pas de validation en cascade - juste de la confiance mutuelle.",
-          technologies: ["React", "Node.js", "APIs IoT", "Synchronisation multi-APIs"],
+          description: "Responsabilité et réactivité, les deux pendants d'un développeur senior.",
+          content: "Smartlockers a signé un partenariat avec les aéroports de Paris pour faciliter la délivrabilité des matériels sur leurs différentes zones. Au sein de l'entreprise, j'ai été délégué pour coder l'interface logicielle, et les particularités du projet m'ont mis en avant pour prendre le lead et développer un prototype utilisable en temps réel dans la routine des agents de l'aéroport. Du challenge, des heures de test et de scan de badge, et du bonheur de resigner pour un contrat plus large avec plus d'options.",
+          technologies: ["Vanilla JS", "Balena", "GitLab", "Synchronisation multi-APIs"],
           links: [
             { href: "https://smartlockers.io", label: "SmartLockers" }
           ],
         },
         {
-          title: "Bikly - Transformation complète",
-          description: "Quand technologie et valeurs écologiques s'alignent parfaitement",
-          content: "Bikly propose des vélos électriques éco-responsables. Mission cette année : migration serveur complète, passage multisites, upgrade Prestashop 8.2. Ce qui me motive : travailler pour une entreprise dont je partage les valeurs. Chaque ligne de code sert la transition écologique et la mobilité douce. Échanges passionnants avec Jennifer Cataldo sur l'impact environnemental de nos choix techniques. Quand le développement web a du sens au-delà du code.",
+          title: "Bikly - Vers un nouvelle marque",
+          description: "2ème migration, de la sueur et des rires",
+          content: "Jennifer Cataldo accompagne les marchands sur l'analyse stratégique et le marketing de leur boutique. Elle connaît très bien son sujet, et elle a monté seule sa marque de vêtements et accessoires pour les cyclistes femme. Un projet passionnant qui se heurte parfois à la masse de code délicate à mettre à jour qu'est Prestashop. Avec un challenge supplémentaire cette année : changer de marque et passer en multisite. C'est avec bonheur que je l'aide à résoudre ses problèmes techniques.",
           technologies: ["Prestashop 8.2", "Migration serveur", "Architecture multisites"],
           links: [
             { href: "https://bikly.fr", label: "Bikly" }
           ]
         },
         {
-          title: "Euroceramic - Interface besoins/solutions",
+          title: "Euroceramic - exemple besoins/solutions",
           description: "La relation client idéale : confiance totale et carte blanche technique",
-          content: "Laurent Boissonnard voulait remplacer son outil Wordpress par quelque chose de sur mesure et performant. Mission : refonte complète avec liberté totale sur les choix techniques. Ce que j'adore : Laurent me dit ce dont il a besoin, je choisis comment le faire. Pas de contraintes techniques imposées, juste de la confiance mutuelle. L'interface besoins/solutions parfaite. Il connaît son métier, je connais le mien. Résultat : un outil qui lui correspond exactement.",
+          content: "Dans le cadre de la vente de carrelage et de ses showrooms, Laurent Boissonnard a développé une méthodologie pour étiqueter toutes les dalles de ses magasins, propulsée avec des modules Wordpress soumis à des mises à jour intempestives. Je l'ai poussé à signer pour avoir son application propriétaire : elle fait exactement ce dont il a besoin, et ne se met à jour que si on lui demande. Je salue fièrement cette naissance digitale et en revendique la paternité.",
           technologies: ["AlpineJS", "QR Codes", "Outil métier sur mesure"],
           links: [
             { href: "https://mes-tarifs.com", label: "Mes-tarifs.com" }
