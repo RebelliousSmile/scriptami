@@ -29,8 +29,8 @@ export function Footer() {
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/">Accueil</NavLink>
                 <NavLink href="/portrait-francois-xavier-guillois">Portrait</NavLink>
-                <NavLink href="/activites-auto-entrepreneur-developpement-haute-savoie">Activités</NavLink>
-                <NavLink href="/automatisation-controle-acces-e-commerce">Mes forces</NavLink>
+                <NavLink href="/services">Services</NavLink>
+                <NavLink href="/thoughts">Microblog</NavLink>
                 <NavLink href="/references-collaborations-professionnelles-scriptami">Références</NavLink>
                 <NavLink href="/devis-gratuit-pour-vos-envies-web">Devis</NavLink>
               </div>
