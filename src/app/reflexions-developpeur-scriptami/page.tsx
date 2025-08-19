@@ -181,8 +181,7 @@ export default function ThoughtsPage() {
             Mur de pensées
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Réflexions en vrac. Des pensées courtes, sans filtre, sur la technologie, la vie, 
-            le monde qui change et les constantes qui demeurent.
+            Reproduction plate de mon palais mental en citations, images et microblogging. Vise à créer une capture de mes aspirations en cet instant.
           </p>
         </header>
 
@@ -204,7 +203,7 @@ export default function ThoughtsPage() {
 
         <footer className="mt-16 text-center">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            Ces pensées sont les miennes, elles n&apos;engagent que moi à l&apos;instant où elles ont été écrites.
+            Lorsque ce ne sont pas des citations, ces pensées sont les miennes.
           </p>
         </footer>
       </div>
