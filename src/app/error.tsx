@@ -25,7 +25,7 @@ export default function Error({
           Erreur serveur
         </h1>
         <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
-          Désolé, une erreur inattendue s'est produite.
+          Désolé, une erreur inattendue s&apos;est produite.
         </p>
         <div className="mt-6 flex gap-6">
           <button
@@ -38,7 +38,7 @@ export default function Error({
             href="/"
             className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 hover:bg-zinc-50 dark:bg-zinc-800 dark:text-zinc-100 dark:ring-zinc-700 dark:hover:bg-zinc-700"
           >
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
         </div>
       </div>

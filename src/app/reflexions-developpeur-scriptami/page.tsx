@@ -134,7 +134,7 @@ function ThoughtCard({ content, tags, author, type, image }: { content: string; 
           : 'bg-white dark:bg-zinc-900 border-zinc-100 dark:border-zinc-800 group-hover:border-zinc-200 dark:group-hover:border-zinc-700'
       }`}>
         {isQuote && (
-          <div className="text-zinc-400 dark:text-zinc-500 text-4xl leading-none mb-2 font-serif">"</div>
+          <div className="text-zinc-400 dark:text-zinc-500 text-4xl leading-none mb-2 font-serif">&quot;</div>
         )}
         <p className={`text-base leading-relaxed ${
           isQuote 
@@ -204,7 +204,7 @@ export default function ThoughtsPage() {
 
         <footer className="mt-16 text-center">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            Ces pensées sont les miennes, elles n'engagent que moi à l'instant où elles ont été écrites.
+            Ces pensées sont les miennes, elles n&apos;engagent que moi à l&apos;instant où elles ont été écrites.
           </p>
         </footer>
       </div>

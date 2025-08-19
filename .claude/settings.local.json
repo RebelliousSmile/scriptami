@@ -6,7 +6,8 @@
       "Bash(rm:*)",
       "Bash(mv:*)",
       "Bash(Move-Item:*)",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(pnpm build:*)"
     ],
     "deny": [],
     "ask": [],

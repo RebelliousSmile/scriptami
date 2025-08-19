@@ -68,6 +68,7 @@ pnpm lint     # Vérifier le code
 - Toujours optimiser les descriptions pour le SEO
 - Utiliser pnpm (pas npm)
 - Les images sont dans `/public/images/`
+- **ESLint entités**: Échapper les apostrophes avec `&apos;` et les guillemets avec `&quot;` dans JSX
 
 ## Intégrations
 - Formulaire de contact: API route `/api/devis`

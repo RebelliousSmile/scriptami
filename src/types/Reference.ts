@@ -4,5 +4,5 @@ export type Reference = {
   description: string
   event: string
   cta: string
-  category: 'E-commerce' | 'Wordpress' | 'WebApp' | 'Site headless'
+  category: 'E-commerce' | 'Wordpress' | 'WebApp' | 'Site headless' | 'Développement industriel'
 } 

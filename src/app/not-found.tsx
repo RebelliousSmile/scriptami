@@ -12,10 +12,10 @@ export default function NotFound() {
           Page introuvable
         </h1>
         <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
-          Désolé, nous n'avons pas trouvé la page que vous cherchez.
+          Désolé, nous n&apos;avons pas trouvé la page que vous cherchez.
         </p>
         <Button href="/" variant="secondary" className="mt-4">
-          Retour à l'accueil
+          Retour à l&apos;accueil
         </Button>
       </div>
     </Container>
