@@ -1,9 +1,11 @@
-import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import { metadata } from './page.metadata'
+
+export { metadata }
 import {
   GitHubIcon,
   LinkedInIcon,
@@ -47,11 +49,6 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'Portrait',
-  description:
-    "Je m'appelle François-Xavier Guillois. Je vis à Rumilly, en Haute-Savoie (74). Je combine un excellent cadre de vie avec un abonnement à la fibre pour vivre dans le meilleur des mondes.",
-}
 
 export default function About() {
   return (

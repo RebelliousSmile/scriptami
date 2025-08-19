@@ -1,13 +1,10 @@
-import { type Metadata } from 'next'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
 import { servicesContent } from '@/data/services'
 import { SectionTitle } from '@/components/SectionTitle'
+import { metadata } from './page.metadata'
 
-export const metadata: Metadata = {
-  title: 'Services - Développement, E-commerce et Automatisation',
-  description: 'Développeur senior avec 20 ans d\'expérience, je vous accompagne dans votre transformation digitale : sites vitrines, e-commerce, automatisation par IA, formation et gamification. Expertise Prestashop, Magento, Woocommerce.',
-}
+export { metadata }
 
 interface ServiceProps {
   title: string
@@ -110,6 +107,44 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
+
+        {servicesContent.footer && (
+          <div className="mt-16 sm:mt-20">
+            <header className="max-w-2xl">
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
+                {servicesContent.footer.title}
+              </h2>
+              {servicesContent.footer.intro && (
+                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                  {servicesContent.footer.intro}
+                </p>
+              )}
+              
+              {servicesContent.footer.profiles && (
+                <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                  {servicesContent.footer.profiles.map((profile, index) => (
+                    <div key={index} className="group relative flex flex-col items-start">
+                      <div className="relative z-10 flex-1">
+                        <h3 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                          {profile.title}
+                        </h3>
+                        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                          {profile.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+              
+              {servicesContent.footer.conclusion && (
+                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400 italic">
+                  {servicesContent.footer.conclusion}
+                </p>
+              )}
+            </header>
+          </div>
+        )}
       </div>
     </Container>
   )

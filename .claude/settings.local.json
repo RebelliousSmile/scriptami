@@ -2,9 +2,16 @@
   "permissions": {
     "allow": [
       "Bash(cp:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(mv:*)",
+      "Bash(Move-Item:*)",
+      "Bash(powershell:*)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "additionalDirectories": [
+      "C:\\mnt\\c\\Users\\fxgui\\Documents\\Projets\\personal-site\\src"
+    ]
   }
 }

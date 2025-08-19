@@ -41,9 +41,21 @@ export interface ContentSection<T extends BaseContent> {
   items: T[]
 }
 
+export interface PageFooter {
+  title: string
+  intro?: string
+  content?: string
+  profiles?: Array<{
+    title: string
+    description: string
+  }>
+  conclusion?: string
+}
+
 export interface PageContent<T extends BaseContent> {
   header: PageHeader
   sections: ContentSection<T>[]
+  footer?: PageFooter
 }
 
 // Ajout des types pour la page d'accueil

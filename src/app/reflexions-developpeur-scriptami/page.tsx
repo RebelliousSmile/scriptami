@@ -1,7 +1,9 @@
-import { type Metadata } from 'next'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
 import { thoughts, type Thought } from '@/data/thoughts'
+import { metadata } from './page.metadata'
+
+export { metadata }
 
 // Fonction pour mélanger un tableau (Fisher-Yates shuffle)
 function shuffleArray<T>(array: T[]): T[] {
@@ -84,10 +86,6 @@ function distributeThoughts(thoughts: Thought[]): Thought[] {
   return result
 }
 
-export const metadata: Metadata = {
-  title: 'Mur de pensées - François-Xavier Guillois',
-  description: 'Micro-blog de François-Xavier Guillois : réflexions personnelles sur la technologie, la vie, le travail et le monde qui nous entoure.',
-}
 
 function ThoughtCard({ content, tags, author, type, image }: { content: string; tags?: string[]; author?: string; type?: 'quote' | 'thought' | 'image'; image?: { src: string; alt: string; caption?: string } }) {
   const isQuote = type === 'quote'

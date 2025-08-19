@@ -191,8 +191,8 @@ export default async function Home() {
             Développer. Se développer.<br /> Sur tous les plans.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Officiant sous la marque Scriptami, je suis un développeur web indépendant basé à Rumilly, en Haute-Savoie (74). 
-            Je crée des <Link href="/references-collaborations-professionnelles-scriptami">projets</Link> et <Link href="/devis-gratuit-pour-vos-envies-web">accompagne mes clients</Link> pour les autonomiser dans leurs défis numériques.
+            Officiant sous la marque Scriptami, je suis un développeur web indépendant spécialisé dans les solutions sur mesure et personnalisées. 
+            Je crée des <Link href="/references-collaborations-professionnelles-scriptami">projets</Link> et <Link href="/devis-gratuit-pour-vos-envies-web">accompagne mes clients</Link> alignés sur le sens pour les autonomiser dans leurs défis numériques.
             Allez sur <Link href="/portrait-francois-xavier-guillois">ma bio</Link> pour les détails et les liens personnels.
           </p>
           <div className="mt-6 flex gap-6">

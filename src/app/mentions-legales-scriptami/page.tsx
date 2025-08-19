@@ -52,9 +52,9 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
-  title: 'Mentions légales',
+  title: 'Mentions légales - Scriptami',
   description:
-    "Mentions légales du site scriptami.",
+    "Mentions légales de Scriptami - Développement web transparent et sur mesure.",
 }
 
 export default function About() {

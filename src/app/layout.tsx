@@ -1,6 +1,7 @@
 import { type Metadata } from 'next'
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
+import { PersonStructuredData, LocalBusinessStructuredData } from '@/components/StructuredData'
 
 import '@/styles/tailwind.css'
 
@@ -29,6 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className="h-full antialiased" suppressHydrationWarning>
+      <head>
+        <PersonStructuredData />
+        <LocalBusinessStructuredData />
+      </head>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="flex w-full">

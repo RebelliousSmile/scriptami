@@ -15,8 +15,8 @@ interface Service {
 
 export const servicesContent: PageContent<Service> = {
   header: {
-    title: "Ce que je peux faire pour vous",
-    intro: "Fort de 20 ans d'expérience dans le développement web et les technologies numériques, je vous accompagne dans votre transformation digitale. De la conception à la mise en production, je m'appuie sur les dernières technologies (IA, automatisation) pour créer des solutions sur mesure adaptées à vos besoins métier."
+    title: "Développement web sur mesure et personnalisé",
+    intro: "Fort de 20 ans d'expérience, je suis votre partenaire technique de confiance pour votre transformation digitale. De la conception à la mise en production, je m'appuie sur les dernières technologies (IA, automatisation) pour créer des solutions personnalisées adaptées à vos besoins métier."
   },
   sections: [
     {
@@ -113,5 +113,28 @@ export const servicesContent: PageContent<Service> = {
         }
       ]
     }
-  ]
+  ],
+  footer: {
+    title: "Avec qui je travaille",
+    intro: "Je collabore avec des projets qui partagent mes valeurs. Si vous vous reconnaissez :",
+    profiles: [
+      {
+        title: "Transparence avant tout",
+        description: "Vous communiquez clairement sur vos pratiques, vos prix, vos méthodes. Pas de bullshit marketing, pas de greenwashing, juste de l'honnêteté sur ce que vous faites vraiment."
+      },
+      {
+        title: "Utilité communautaire",
+        description: "Votre projet améliore concrètement la vie des gens, facilite l'accès à des services essentiels, ou renforce les liens sociaux. Vous pensez collectif, pas juste profit."
+      },
+      {
+        title: "Respect environnemental",
+        description: "Vous intégrez l'impact écologique dans vos décisions, favorisez la durabilité, la réparation, le local. Votre activité ne détruit pas ce qu'elle prétend améliorer."
+      },
+      {
+        title: "Innovation raisonnée",
+        description: "Vous utilisez la technologie pour résoudre de vrais problèmes, pas pour créer de faux besoins. L'IA et le numérique sont des outils, pas des objectifs."
+      }
+    ],
+    conclusion: "Si vous hochez la tête en lisant ça, on va probablement bien s'entendre."
+  }
 }

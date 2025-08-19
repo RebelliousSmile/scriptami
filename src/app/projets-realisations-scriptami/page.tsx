@@ -1,11 +1,13 @@
-import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { metadata } from './page.metadata'
 import logoBotik from '@/images/logos/botik.svg'
 import logoGiveaways from '@/images/logos/giveaways.svg'
 import logoCabPart from '@/images/logos/cabinetpartage.svg'
+
+export { metadata }
 
 const projects = [
   {
@@ -42,10 +44,6 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'Projets',
-  description: 'Utiliser le numérique pour transformer ma vie, et peut-être aussi la vôtre.',
-}
 
 export default function Projects() {
   return (
