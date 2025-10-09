@@ -41,6 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/automatisation-controle-acces-e-commerce`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/devis-gratuit-pour-vos-envies-web`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
